@@ -1,0 +1,17 @@
+[tool.black]
+line-length = 120
+force-exclude = '''
+__sql_gen.py
+'''
+
+
+[tool.isort]
+profile = "black"
+line_length = 120
+sections = ['FUTURE', 'STDLIB', 'THIRDPARTY', 'FIRSTPARTY', 'LOCALFOLDER']
+skip=[".venv"]
+import_heading_future = "Future imports"
+import_heading_stdlib = "Standard Library"
+import_heading_thirdparty = "Third party dependencies"
+import_heading_firstparty = "Current project dependencies"
+import_heading_localfolder = "Local imports"

@@ -1,0 +1,13 @@
+Flask
+alpaca-py
+twelvedata
+black
+isort
+flake8
+scipy
+numpy
+pandas
+matplotlib
+scikit-learn
+vectorbt
+joblib

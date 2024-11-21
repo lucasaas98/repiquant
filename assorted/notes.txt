@@ -1,0 +1,16 @@
+Idea:
+
+We show the "picture" of the world around us by adding data points, firstly we will do with: Support, Resistance, EMA, VWAP, MACD, RSI, Previous Close, Previous Open, Previous High, Previous Low, LinReg of Close values.
+Initially we will have 4 order types. 3 longs and a NoOp:
+    - NoOp - we should not do anything at this point
+    - Small Long - we will make money on a 1.5/1 risk/reward ratio
+    - Medium Long - We will make money on a 3/1 risk/reward ratio
+    - Mega Long - We will make money on a 5/1 risk/reward ratio
+At any bar we need to take the "picture" and calculate how much we would make with each of the order type.
+This will allow us to classify each bar by its best order type. Meaning we have a dataset we can then train for classification. 
+We will need to do this on multiple tickers from the same market. And we should create different models for different markets - the model that works on stocks probably won't work on FX.
+
+Modifiables:
+- The picture can change for the data, meaning we can add or remove variables as we see fit. 
+- We can add more order types, especially special ones like trailing stop loss and even options.
+- The frequency, we can check if being on the 1 minute bar is more useful than 5 or 30 minute or day

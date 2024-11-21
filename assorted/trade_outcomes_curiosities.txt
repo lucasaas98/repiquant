@@ -1,0 +1,2180 @@
+Calculating outcomes of 5min for TSLA. max_bars: 5
+	number of wins: 873
+	Average winning stop_loss:  4.988545246277205 %
+	Average winning take_profit_ratio:  1.0848224513172806
+	Average winning time in market:  2.120274914089347 bars
+	Best performance: 57.938230417411376% -> sl: 1, tpr: 1.05, bars_in_market: 3
+
+	number of losses: 34447
+	Average losing stop_loss:  1.6183702499491974 %
+	Average losing take_profit_ratio:  2.1214285714285257
+	Average losing time in market:  2.3424100792521845 bars
+	Worst performance: -14.586249650041994% -> sl: 2, tpr: 1.05, bars_in_market: 3
+
+
+
+Calculating outcomes of 5min for TSLA. max_bars: 10
+	number of wins: 2012
+	Average winning stop_loss:  5.022365805168986 %
+	Average winning take_profit_ratio:  1.081709741550677
+	Average winning time in market:  4.9835984095427435 bars
+	Best performance: 58.8484292125663% -> sl: 1, tpr: 1.05, bars_in_market: 8
+
+	number of losses: 80325
+	Average losing stop_loss:  1.6711111111111112 %
+	Average losing take_profit_ratio:  2.1214285714290266
+	Average losing time in market:  5.007668845315904 bars
+	Worst performance: -14.586249650041994% -> sl: 2, tpr: 1.05, bars_in_market: 3
+
+
+
+Calculating outcomes of 5min for TSLA. max_bars: 20
+	number of wins: 5322
+	Average winning stop_loss:  5.016347237880496 %
+	Average winning take_profit_ratio:  1.074135663284585
+	Average winning time in market:  11.170048853814356 bars
+	Best performance: 59.29933048455853% -> sl: 1, tpr: 1.05, bars_in_market: 11
+
+	number of losses: 168714
+	Average losing stop_loss:  1.8141647996016927 %
+	Average losing take_profit_ratio:  2.1214285714281114
+	Average losing time in market:  9.956684092606423 bars
+	Worst performance: -14.992062847598714% -> sl: 2, tpr: 1.05, bars_in_market: 19
+
+
+
+Calculating outcomes of 5min for TSLA. max_bars: 50
+	number of wins: 19159
+	Average winning stop_loss:  5.029020303773684 %
+	Average winning take_profit_ratio:  1.06865441828872
+	Average winning time in market:  28.549976512344067 bars
+	Best performance: 59.29933048455853% -> sl: 1, tpr: 1.05, bars_in_market: 11
+
+	number of losses: 386316
+	Average losing stop_loss:  2.155059588523385 %
+	Average losing take_profit_ratio:  2.1215062280599275
+	Average losing time in market:  23.425780966876857 bars
+	Worst performance: -17.13146989859625% -> sl: 5, tpr: 1.05, bars_in_market: 44
+
+
+
+Calculating outcomes of 5min for TSLA. max_bars: 60
+	number of wins: 24904
+	Average winning stop_loss:  5.040796659171217 %
+	Average winning take_profit_ratio:  1.0679027465462874
+	Average winning time in market:  34.53039672341792 bars
+	Best performance: 59.29933048455853% -> sl: 1, tpr: 1.05, bars_in_market: 11
+
+	number of losses: 447223
+	Average losing stop_loss:  2.262712338140033 %
+	Average losing take_profit_ratio:  2.121495652055007
+	Average losing time in market:  27.663713628324125 bars
+	Worst performance: -17.36761609944736% -> sl: 5, tpr: 1.05, bars_in_market: 56
+
+
+
+Calculating outcomes of 5min for TSLA. max_bars: 70
+	number of wins: 31484
+	Average winning stop_loss:  5.061173929615043 %
+	Average winning take_profit_ratio:  1.0672611485194312
+	Average winning time in market:  40.81908270867742 bars
+	Best performance: 59.29933048455853% -> sl: 1, tpr: 1.05, bars_in_market: 11
+
+	number of losses: 503442
+	Average losing stop_loss:  2.363553299089071 %
+	Average losing take_profit_ratio:  2.1214988022432806
+	Average losing time in market:  31.78718104568153 bars
+	Worst performance: -17.72863540059463% -> sl: 5, tpr: 1.05, bars_in_market: 69
+
+
+
+Calculating outcomes of 5min for TSLA. max_bars: 100
+	number of wins: 53017
+	Average winning stop_loss:  5.117132240602071 %
+	Average winning take_profit_ratio:  1.0662504479701505
+	Average winning time in market:  58.72755908482185 bars
+	Best performance: 59.73638854626451% -> sl: 1, tpr: 1.05, bars_in_market: 81
+
+	number of losses: 631689
+	Average losing stop_loss:  2.6221146798503696 %
+	Average losing take_profit_ratio:  2.1219000964092585
+	Average losing time in market:  42.439002420494894 bars
+	Worst performance: -20.653910458851936% -> sl: 10, tpr: 1.05, bars_in_market: 83
+
+
+
+
+
+
+
+Calculating outcomes of 1h for TSLA. max_bars: 5
+	number of wins: 2667
+	Average winning stop_loss:  4.9152605924259465 %
+	Average winning take_profit_ratio:  1.0568053993251023
+	Average winning time in market:  2.4488188976377954 bars
+	Best performance: 16.627235733888515% -> sl: 1, tpr: 1.1, bars_in_market: 3
+
+	number of losses: 38276
+	Average losing stop_loss:  2.2746891002194585 %
+	Average losing take_profit_ratio:  2.121428571428613
+	Average losing time in market:  1.9476956839795172 bars
+	Worst performance: -17.176656304958062% -> sl: 4, tpr: 1.05, bars_in_market: 4
+
+
+
+Calculating outcomes of 1h for TSLA. max_bars: 10
+	number of wins: 7256
+	Average winning stop_loss:  5.0077177508269015 %
+	Average winning take_profit_ratio:  1.0581312017641797
+	Average winning time in market:  5.285143329658214 bars
+	Best performance: 16.627235733888515% -> sl: 1, tpr: 1.1, bars_in_market: 3
+
+	number of losses: 65004
+	Average losing stop_loss:  2.743461940803643 %
+	Average losing take_profit_ratio:  2.1220878715159657
+	Average losing time in market:  3.949449264660636 bars
+	Worst performance: -20.158519509551382% -> sl: 8, tpr: 1.05, bars_in_market: 9
+
+
+
+Calculating outcomes of 1h for TSLA. max_bars: 20
+	number of wins: 14782
+	Average winning stop_loss:  5.124137464483832 %
+	Average winning take_profit_ratio:  1.0635299688809352
+	Average winning time in market:  9.95859829522392 bars
+	Best performance: 23.64549679848866% -> sl: 1, tpr: 1.2, bars_in_market: 19
+
+	number of losses: 99158
+	Average losing stop_loss:  3.263317130236592 %
+	Average losing take_profit_ratio:  2.124865870631249
+	Average losing time in market:  7.446580205328869 bars
+	Worst performance: -21.485294117647058% -> sl: 10, tpr: 1.05, bars_in_market: 15
+
+
+
+Calculating outcomes of 1h for TSLA. max_bars: 50
+	number of wins: 27234
+	Average winning stop_loss:  5.383381067782919 %
+	Average winning take_profit_ratio:  1.077214144084202
+	Average winning time in market:  20.38363809943453 bars
+	Best performance: 26.23200762843181% -> sl: 1, tpr: 1.2, bars_in_market: 31
+
+	number of losses: 146510
+	Average losing stop_loss:  3.893256433007986 %
+	Average losing take_profit_ratio:  2.137612449662177
+	Average losing time in market:  15.573640024571702 bars
+	Worst performance: -21.485294117647058% -> sl: 10, tpr: 1.05, bars_in_market: 15
+
+
+
+Calculating outcomes of 1h for TSLA. max_bars: 60
+	number of wins: 29675
+	Average winning stop_loss:  5.430800336983993 %
+	Average winning take_profit_ratio:  1.0813007582135776
+	Average winning time in market:  23.27966301600674 bars
+	Best performance: 26.494166422496022% -> sl: 1, tpr: 1.2, bars_in_market: 56
+
+	number of losses: 155697
+	Average losing stop_loss:  4.009139546683623 %
+	Average losing take_profit_ratio:  2.1430287674135062
+	Average losing time in market:  17.890556658124435 bars
+	Worst performance: -21.485294117647058% -> sl: 10, tpr: 1.05, bars_in_market: 15
+
+
+
+Calculating outcomes of 1h for TSLA. max_bars: 70
+	number of wins: 31571
+	Average winning stop_loss:  5.477748566722625 %
+	Average winning take_profit_ratio:  1.0843353077187432
+	Average winning time in market:  25.87460010769377 bars
+	Best performance: 50.81856364043445% -> sl: 1, tpr: 1.5, bars_in_market: 68
+
+	number of losses: 162594
+	Average losing stop_loss:  4.1009200831519 %
+	Average losing take_profit_ratio:  2.1469952765782323
+	Average losing time in market:  19.898065119254092 bars
+	Worst performance: -21.485294117647058% -> sl: 10, tpr: 1.05, bars_in_market: 15
+
+
+
+Calculating outcomes of 1h for TSLA. max_bars: 100
+	number of wins: 34501
+	Average winning stop_loss:  5.559114228573085 %
+	Average winning take_profit_ratio:  1.091987188776861
+	Average winning time in market:  31.423697863830032 bars
+	Best performance: 57.378248929811804% -> sl: 1, tpr: 1.5, bars_in_market: 99
+
+	number of losses: 176836
+	Average losing stop_loss:  4.24887466353005 %
+	Average losing take_profit_ratio:  2.1604348096537116
+	Average losing time in market:  25.300125540048406 bars
+	Worst performance: -21.485294117647058% -> sl: 10, tpr: 1.05, bars_in_market: 15
+
+
+
+
+
+
+
+Calculating outcomes of 1day for TSLA. max_bars: 5
+	number of wins: 11137
+	Average winning stop_loss:  5.075603843045704 %
+	Average winning take_profit_ratio:  1.0691074795725433
+	Average winning time in market:  1.9027565771751818 bars
+	Best performance: 51.32606878440683% -> sl: 1, tpr: 1.5, bars_in_market: 2
+
+	number of losses: 79658
+	Average losing stop_loss:  3.5152652589821485 %
+	Average losing take_profit_ratio:  2.126872379422495
+	Average losing time in market:  1.5361168997464159 bars
+	Worst performance: -27.318933897169035% -> sl: 10, tpr: 1.05, bars_in_market: 1
+
+
+
+Calculating outcomes of 1day for TSLA. max_bars: 10
+	number of wins: 16955
+	Average winning stop_loss:  5.252668829253907 %
+	Average winning take_profit_ratio:  1.0778383957532756
+	Average winning time in market:  3.575287525803598 bars
+	Best performance: 100.58140476460393% -> sl: 1, tpr: 2, bars_in_market: 8
+
+	number of losses: 109689
+	Average losing stop_loss:  3.986370556755919 %
+	Average losing take_profit_ratio:  2.1369904912987243
+	Average losing time in market:  2.960825606943267 bars
+	Worst performance: -27.318933897169035% -> sl: 10, tpr: 1.05, bars_in_market: 1
+
+
+
+Calculating outcomes of 1day for TSLA. max_bars: 20
+	number of wins: 21253
+	Average winning stop_loss:  5.432174281277938 %
+	Average winning take_profit_ratio:  1.0883216487081273
+	Average winning time in market:  5.608055333364701 bars
+	Best performance: 109.43748256624826% -> sl: 1, tpr: 2, bars_in_market: 16
+
+	number of losses: 134457
+	Average losing stop_loss:  4.31764802130049 %
+	Average losing take_profit_ratio:  2.1576909346485915
+	Average losing time in market:  4.986218642391248 bars
+	Worst performance: -27.318933897169035% -> sl: 10, tpr: 1.05, bars_in_market: 1
+
+
+
+Calculating outcomes of 1day for TSLA. max_bars: 50
+	number of wins: 24543
+	Average winning stop_loss:  5.59181844110337 %
+	Average winning take_profit_ratio:  1.1054618424802443
+	Average winning time in market:  9.073585136291406 bars
+	Best performance: 110.74931544865865% -> sl: 1, tpr: 2, bars_in_market: 41
+
+	number of losses: 155162
+	Average losing stop_loss:  4.575514623425839 %
+	Average losing take_profit_ratio:  2.1967205243551375
+	Average losing time in market:  8.699810520617161 bars
+	Worst performance: -27.318933897169035% -> sl: 10, tpr: 1.05, bars_in_market: 1
+
+
+
+Calculating outcomes of 1day for TSLA. max_bars: 60
+	number of wins: 24932
+	Average winning stop_loss:  5.60508583346703 %
+	Average winning take_profit_ratio:  1.1094517086472215
+	Average winning time in market:  9.842090486122252 bars
+	Best performance: 111.60749900279218% -> sl: 1, tpr: 2, bars_in_market: 57
+
+	number of losses: 157311
+	Average losing stop_loss:  4.602977541303533 %
+	Average losing take_profit_ratio:  2.205166517280983
+	Average losing time in market:  9.470005276172676 bars
+	Worst performance: -27.318933897169035% -> sl: 10, tpr: 1.05, bars_in_market: 1
+
+
+
+Calculating outcomes of 1day for TSLA. max_bars: 70
+	number of wins: 25222
+	Average winning stop_loss:  5.614304971849973 %
+	Average winning take_profit_ratio:  1.1123205931326832
+	Average winning time in market:  10.59035762429625 bars
+	Best performance: 111.60749900279218% -> sl: 1, tpr: 2, bars_in_market: 57
+
+	number of losses: 158889
+	Average losing stop_loss:  4.62387578749945 %
+	Average losing take_profit_ratio:  2.2125216346001575
+	Average losing time in market:  10.180188685182738 bars
+	Worst performance: -27.318933897169035% -> sl: 10, tpr: 1.05, bars_in_market: 1
+
+
+
+Calculating outcomes of 1day for TSLA. max_bars: 100
+	number of wins: 25633
+	Average winning stop_loss:  5.63191979089455 %
+	Average winning take_profit_ratio:  1.1169820153705226
+	Average winning time in market:  11.966215425428159 bars
+	Best performance: 111.60749900279218% -> sl: 1, tpr: 2, bars_in_market: 57
+
+	number of losses: 160679
+	Average losing stop_loss:  4.65636455292851 %
+	Average losing take_profit_ratio:  2.226267278237877
+	Average losing time in market:  11.688472046751597 bars
+	Worst performance: -27.318933897169035% -> sl: 10, tpr: 1.05, bars_in_market: 1
+
+
+
+
+
+
+
+Calculating outcomes of 1min for TSLA. max_bars: 5
+	number of wins: 566
+	Average winning stop_loss:  4.943462897526501 %
+	Average winning take_profit_ratio:  1.0590106007067124
+	Average winning time in market:  2.0070671378091873 bars
+	Best performance: 12.798505800211913% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 20447
+	Average losing stop_loss:  1.546730571722013 %
+	Average losing take_profit_ratio:  2.121428571428456
+	Average losing time in market:  2.451557685724067 bars
+	Worst performance: -13.590272391331352% -> sl: 2, tpr: 1.05, bars_in_market: 4
+
+
+
+Calculating outcomes of 1min for TSLA. max_bars: 10
+	number of wins: 1155
+	Average winning stop_loss:  4.983549783549783 %
+	Average winning take_profit_ratio:  1.0584848484848275
+	Average winning time in market:  4.64935064935065 bars
+	Best performance: 12.798505800211913% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 53669
+	Average losing stop_loss:  1.5081518194861092 %
+	Average losing take_profit_ratio:  2.1214285714288397
+	Average losing time in market:  5.32502934655015 bars
+	Worst performance: -14.478163018493154% -> sl: 3, tpr: 1.05, bars_in_market: 8
+
+
+
+Calculating outcomes of 1min for TSLA. max_bars: 20
+	number of wins: 2462
+	Average winning stop_loss:  5.056051990251828 %
+	Average winning take_profit_ratio:  1.0574735987002586
+	Average winning time in market:  9.919983753046305 bars
+	Best performance: 12.798505800211913% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 135329
+	Average losing stop_loss:  1.5260513267666207 %
+	Average losing take_profit_ratio:  2.121444405855607
+	Average losing time in market:  10.904580688544215 bars
+	Worst performance: -14.806023735913037% -> sl: 3, tpr: 1.05, bars_in_market: 17
+
+
+
+Calculating outcomes of 1min for TSLA. max_bars: 50
+	number of wins: 7155
+	Average winning stop_loss:  5.124388539482879 %
+	Average winning take_profit_ratio:  1.057393431167131
+	Average winning time in market:  26.599021663172607 bars
+	Best performance: 14.74960889124451% -> sl: 1, tpr: 1.05, bars_in_market: 30
+
+	number of losses: 404570
+	Average losing stop_loss:  1.6216377882690263 %
+	Average losing take_profit_ratio:  2.1214338680553126
+	Average losing time in market:  26.596801542378326 bars
+	Worst performance: -14.806023735913037% -> sl: 3, tpr: 1.05, bars_in_market: 17
+
+
+
+Calculating outcomes of 1min for TSLA. max_bars: 60
+	number of wins: 9160
+	Average winning stop_loss:  5.122707423580786 %
+	Average winning take_profit_ratio:  1.0574563318777297
+	Average winning time in market:  32.83853711790393 bars
+	Best performance: 14.74960889124451% -> sl: 1, tpr: 1.05, bars_in_market: 30
+
+	number of losses: 490693
+	Average losing stop_loss:  1.656756872423287 %
+	Average losing take_profit_ratio:  2.1214285714262306
+	Average losing time in market:  31.504871681479052 bars
+	Worst performance: -14.806023735913037% -> sl: 3, tpr: 1.05, bars_in_market: 17
+
+
+
+Calculating outcomes of 1min for TSLA. max_bars: 70
+	number of wins: 11885
+	Average winning stop_loss:  5.1036600757257045 %
+	Average winning take_profit_ratio:  1.0568868321412128
+	Average winning time in market:  40.121497686159024 bars
+	Best performance: 14.74960889124451% -> sl: 1, tpr: 1.05, bars_in_market: 30
+
+	number of losses: 577655
+	Average losing stop_loss:  1.6909660610572055 %
+	Average losing take_profit_ratio:  2.121439700166966
+	Average losing time in market:  36.504441232223385 bars
+	Worst performance: -14.806023735913037% -> sl: 3, tpr: 1.05, bars_in_market: 17
+
+
+
+Calculating outcomes of 1min for TSLA. max_bars: 100
+	number of wins: 21192
+	Average winning stop_loss:  5.0633257833144585 %
+	Average winning take_profit_ratio:  1.0557238580592319
+	Average winning time in market:  59.99948093620234 bars
+	Best performance: 14.74960889124451% -> sl: 1, tpr: 1.05, bars_in_market: 30
+
+	number of losses: 819194
+	Average losing stop_loss:  1.7806954152496235 %
+	Average losing take_profit_ratio:  2.121449497924987
+	Average losing time in market:  50.637662141080135 bars
+	Worst performance: -15.041572184429327% -> sl: 4, tpr: 1.05, bars_in_market: 96
+
+
+
+
+
+
+
+Calculating outcomes of 5min for AAPL. max_bars: 5
+	number of wins: 30
+	Average winning stop_loss:  5.133333333333334 %
+	Average winning take_profit_ratio:  1.0500000000000005
+	Average winning time in market:  1.7666666666666666 bars
+	Best performance: 6.901415300812215% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 5327
+	Average losing stop_loss:  1.354796320630749 %
+	Average losing take_profit_ratio:  2.121428571428601
+	Average losing time in market:  2.3035479632063076 bars
+	Worst performance: -6.442945547297143% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 5min for AAPL. max_bars: 10
+	number of wins: 57
+	Average winning stop_loss:  5.315789473684211 %
+	Average winning take_profit_ratio:  1.049999999999999
+	Average winning time in market:  3.9649122807017543 bars
+	Best performance: 6.901415300812215% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 13426
+	Average losing stop_loss:  1.3550573514077164 %
+	Average losing take_profit_ratio:  2.1214285714285044
+	Average losing time in market:  5.205422314911366 bars
+	Worst performance: -6.442945547297143% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 5min for AAPL. max_bars: 20
+	number of wins: 212
+	Average winning stop_loss:  5.216981132075472 %
+	Average winning take_profit_ratio:  1.0500000000000038
+	Average winning time in market:  11.45754716981132 bars
+	Best performance: 6.901415300812215% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 33201
+	Average losing stop_loss:  1.4187223276407337 %
+	Average losing take_profit_ratio:  2.121428571428493
+	Average losing time in market:  10.851992409867172 bars
+	Worst performance: -7.054362093482372% -> sl: 4, tpr: 1.05, bars_in_market: 19
+
+
+
+Calculating outcomes of 5min for AAPL. max_bars: 50
+	number of wins: 858
+	Average winning stop_loss:  5.207459207459207 %
+	Average winning take_profit_ratio:  1.049999999999985
+	Average winning time in market:  30.636363636363637 bars
+	Best performance: 6.901415300812215% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 101122
+	Average losing stop_loss:  1.5055378651529836 %
+	Average losing take_profit_ratio:  2.121428571429104
+	Average losing time in market:  27.000484563200885 bars
+	Worst performance: -7.9758558642608195% -> sl: 5, tpr: 1.05, bars_in_market: 49
+
+
+
+Calculating outcomes of 5min for AAPL. max_bars: 60
+	number of wins: 1229
+	Average winning stop_loss:  5.1651749389747765 %
+	Average winning take_profit_ratio:  1.0499999999999758
+	Average winning time in market:  37.83726606997559 bars
+	Best performance: 6.901415300812215% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 123599
+	Average losing stop_loss:  1.5385965905873025 %
+	Average losing take_profit_ratio:  2.121428571429157
+	Average losing time in market:  32.00543693719205 bars
+	Worst performance: -8.12202045617919% -> sl: 8, tpr: 1.05, bars_in_market: 50
+
+
+
+Calculating outcomes of 5min for AAPL. max_bars: 70
+	number of wins: 1453
+	Average winning stop_loss:  5.1390227116311085 %
+	Average winning take_profit_ratio:  1.0499999999999725
+	Average winning time in market:  41.86097728836889 bars
+	Best performance: 7.33260410969608% -> sl: 1, tpr: 1.05, bars_in_market: 65
+
+	number of losses: 145264
+	Average losing stop_loss:  1.5690535851966076 %
+	Average losing take_profit_ratio:  2.121428571428574
+	Average losing time in market:  36.86757902852737 bars
+	Worst performance: -8.12202045617919% -> sl: 8, tpr: 1.05, bars_in_market: 50
+
+
+
+Calculating outcomes of 5min for AAPL. max_bars: 100
+	number of wins: 3073
+	Average winning stop_loss:  5.072242108688578 %
+	Average winning take_profit_ratio:  1.0507809957696501
+	Average winning time in market:  65.17181906931337 bars
+	Best performance: 10.233576642335773% -> sl: 1, tpr: 1.1, bars_in_market: 97
+
+	number of losses: 200522
+	Average losing stop_loss:  1.694372687286183 %
+	Average losing take_profit_ratio:  2.1214285714276566
+	Average losing time in market:  50.01295119737485 bars
+	Worst performance: -11.314730534632632% -> sl: 10, tpr: 1.05, bars_in_market: 99
+
+
+
+
+
+
+
+Calculating outcomes of 1h for AAPL. max_bars: 5
+	number of wins: 164
+	Average winning stop_loss:  4.963414634146342 %
+	Average winning take_profit_ratio:  1.0500000000000016
+	Average winning time in market:  3.182926829268293 bars
+	Best performance: 8.550386988436408% -> sl: 1, tpr: 1.05, bars_in_market: 3
+
+	number of losses: 13272
+	Average losing stop_loss:  1.5469409282700421 %
+	Average losing take_profit_ratio:  2.121428571428506
+	Average losing time in market:  2.1571729957805905 bars
+	Worst performance: -7.600031421094287% -> sl: 2, tpr: 1.05, bars_in_market: 3
+
+
+
+Calculating outcomes of 1h for AAPL. max_bars: 10
+	number of wins: 854
+	Average winning stop_loss:  4.9192037470726 %
+	Average winning take_profit_ratio:  1.049999999999985
+	Average winning time in market:  6.464871194379391 bars
+	Best performance: 8.713659733218373% -> sl: 1, tpr: 1.05, bars_in_market: 9
+
+	number of losses: 26726
+	Average losing stop_loss:  1.7826086956521738 %
+	Average losing take_profit_ratio:  2.121428571428434
+	Average losing time in market:  4.542168674698795 bars
+	Worst performance: -11.23728278630642% -> sl: 8, tpr: 1.05, bars_in_market: 8
+
+
+
+Calculating outcomes of 1h for AAPL. max_bars: 20
+	number of wins: 2856
+	Average winning stop_loss:  4.985294117647059 %
+	Average winning take_profit_ratio:  1.0537990196078724
+	Average winning time in market:  12.368347338935575 bars
+	Best performance: 12.494537849615629% -> sl: 1, tpr: 1.1, bars_in_market: 12
+
+	number of losses: 48275
+	Average losing stop_loss:  2.135618850336613 %
+	Average losing take_profit_ratio:  2.121517348524286
+	Average losing time in market:  8.882485758674262 bars
+	Worst performance: -11.796759785716315% -> sl: 10, tpr: 1.05, bars_in_market: 11
+
+
+
+Calculating outcomes of 1h for AAPL. max_bars: 50
+	number of wins: 8936
+	Average winning stop_loss:  5.162488809310654 %
+	Average winning take_profit_ratio:  1.057536929274881
+	Average winning time in market:  27.24955237242614 bars
+	Best performance: 13.656267104542971% -> sl: 5, tpr: 1.1, bars_in_market: 42
+
+	number of losses: 90619
+	Average losing stop_loss:  2.8688354539335017 %
+	Average losing take_profit_ratio:  2.121877862258967
+	Average losing time in market:  20.35819199064214 bars
+	Worst performance: -11.947509303388381% -> sl: 8, tpr: 1.05, bars_in_market: 21
+
+
+
+Calculating outcomes of 1h for AAPL. max_bars: 60
+	number of wins: 10525
+	Average winning stop_loss:  5.209311163895487 %
+	Average winning take_profit_ratio:  1.0582565320664854
+	Average winning time in market:  31.30745843230404 bars
+	Best performance: 13.991550132745406% -> sl: 4, tpr: 1.1, bars_in_market: 51
+
+	number of losses: 101242
+	Average losing stop_loss:  3.0400525473617668 %
+	Average losing take_profit_ratio:  2.122084707928079
+	Average losing time in market:  23.94735386499674 bars
+	Worst performance: -11.947509303388381% -> sl: 8, tpr: 1.05, bars_in_market: 21
+
+
+
+Calculating outcomes of 1h for AAPL. max_bars: 70
+	number of wins: 11816
+	Average winning stop_loss:  5.248476641841571 %
+	Average winning take_profit_ratio:  1.0592501692619611
+	Average winning time in market:  35.017857142857146 bars
+	Best performance: 13.991550132745406% -> sl: 4, tpr: 1.1, bars_in_market: 51
+
+	number of losses: 110259
+	Average losing stop_loss:  3.1886920795581313 %
+	Average losing take_profit_ratio:  2.122361439883023
+	Average losing time in market:  27.265302605682983 bars
+	Worst performance: -11.947509303388381% -> sl: 8, tpr: 1.05, bars_in_market: 21
+
+
+
+Calculating outcomes of 1h for AAPL. max_bars: 100
+	number of wins: 15355
+	Average winning stop_loss:  5.3266037121458805 %
+	Average winning take_profit_ratio:  1.0625724519699398
+	Average winning time in market:  47.33344187561055 bars
+	Best performance: 23.990876086748838% -> sl: 1, tpr: 1.2, bars_in_market: 81
+
+	number of losses: 133197
+	Average losing stop_loss:  3.5446293835446743 %
+	Average losing take_profit_ratio:  2.1248500341602514
+	Average losing time in market:  37.142871085685115 bars
+	Worst performance: -12.017751886598067% -> sl: 10, tpr: 1.05, bars_in_market: 99
+
+
+
+
+
+
+
+Calculating outcomes of 1day for AAPL. max_bars: 5
+	number of wins: 5768
+	Average winning stop_loss:  5.018030513176145 %
+	Average winning take_profit_ratio:  1.0605322468794354
+	Average winning time in market:  2.2337031900138697 bars
+	Best performance: 32.11068452372368% -> sl: 1, tpr: 1.2, bars_in_market: 4
+
+	number of losses: 72947
+	Average losing stop_loss:  2.7541091477373985 %
+	Average losing take_profit_ratio:  2.1222462884015836
+	Average losing time in market:  1.7780306249742963 bars
+	Worst performance: -15.550580540374447% -> sl: 8, tpr: 1.05, bars_in_market: 4
+
+
+
+Calculating outcomes of 1day for AAPL. max_bars: 10
+	number of wins: 10889
+	Average winning stop_loss:  5.14638626136468 %
+	Average winning take_profit_ratio:  1.0660115713104927
+	Average winning time in market:  4.372761502433649 bars
+	Best performance: 32.479448330122594% -> sl: 10, tpr: 1.2, bars_in_market: 9
+
+	number of losses: 115759
+	Average losing stop_loss:  3.343532684283727 %
+	Average losing take_profit_ratio:  2.1247734517408468
+	Average losing time in market:  3.6513705197867985 bars
+	Worst performance: -19.470343309895853% -> sl: 10, tpr: 1.05, bars_in_market: 8
+
+
+
+Calculating outcomes of 1day for AAPL. max_bars: 20
+	number of wins: 16498
+	Average winning stop_loss:  5.34846648078555 %
+	Average winning take_profit_ratio:  1.0752970056975164
+	Average winning time in market:  7.567765789792702 bars
+	Best performance: 58.78950806016488% -> sl: 1, tpr: 1.5, bars_in_market: 13
+
+	number of losses: 162732
+	Average losing stop_loss:  3.9124081311604355 %
+	Average losing take_profit_ratio:  2.1308832927755654
+	Average losing time in market:  6.6356709190571 bars
+	Worst performance: -19.506240730557085% -> sl: 10, tpr: 1.05, bars_in_market: 12
+
+
+
+Calculating outcomes of 1day for AAPL. max_bars: 50
+	number of wins: 21735
+	Average winning stop_loss:  5.5975615366919715 %
+	Average winning take_profit_ratio:  1.0916287094545332
+	Average winning time in market:  13.22360248447205 bars
+	Best performance: 102.07333503718496% -> sl: 1, tpr: 2, bars_in_market: 38
+
+	number of losses: 211794
+	Average losing stop_loss:  4.43934200213415 %
+	Average losing take_profit_ratio:  2.1520080833254016
+	Average losing time in market:  12.520576598015053 bars
+	Worst performance: -19.506240730557085% -> sl: 10, tpr: 1.05, bars_in_market: 12
+
+
+
+Calculating outcomes of 1day for AAPL. max_bars: 60
+	number of wins: 22189
+	Average winning stop_loss:  5.623417008427599 %
+	Average winning take_profit_ratio:  1.0939677317587164
+	Average winning time in market:  14.091937446482492 bars
+	Best performance: 102.1795076103062% -> sl: 3, tpr: 2, bars_in_market: 56
+
+	number of losses: 218543
+	Average losing stop_loss:  4.514063593892278 %
+	Average losing take_profit_ratio:  2.1569437135932286
+	Average losing time in market:  13.915266103238265 bars
+	Worst performance: -19.506240730557085% -> sl: 10, tpr: 1.05, bars_in_market: 12
+
+
+
+Calculating outcomes of 1day for AAPL. max_bars: 70
+	number of wins: 22395
+	Average winning stop_loss:  5.639517749497656 %
+	Average winning take_profit_ratio:  1.0950189774500574
+	Average winning time in market:  14.621790578254075 bars
+	Best performance: 102.1795076103062% -> sl: 3, tpr: 2, bars_in_market: 56
+
+	number of losses: 223711
+	Average losing stop_loss:  4.560723433358216 %
+	Average losing take_profit_ratio:  2.162567553673243
+	Average losing time in market:  15.186544246818439 bars
+	Worst performance: -19.506240730557085% -> sl: 10, tpr: 1.05, bars_in_market: 12
+
+
+
+Calculating outcomes of 1day for AAPL. max_bars: 100
+	number of wins: 22579
+	Average winning stop_loss:  5.667965808937509 %
+	Average winning take_profit_ratio:  1.1022631648874661
+	Average winning time in market:  16.666371407059657 bars
+	Best performance: 104.30404920418552% -> sl: 6, tpr: 2, bars_in_market: 81
+
+	number of losses: 233329
+	Average losing stop_loss:  4.659939398874551 %
+	Average losing take_profit_ratio:  2.17336186243362
+	Average losing time in market:  18.191120692241427 bars
+	Worst performance: -19.506240730557085% -> sl: 10, tpr: 1.05, bars_in_market: 12
+
+
+
+
+
+
+
+Calculating outcomes of 1min for AAPL. max_bars: 5
+	number of wins: 52
+	Average winning stop_loss:  5.519230769230769 %
+	Average winning take_profit_ratio:  1.057692307692307
+	Average winning time in market:  1.3846153846153846 bars
+	Best performance: 11.201052312051004% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 3612
+	Average losing stop_loss:  1.4069767441860466 %
+	Average losing take_profit_ratio:  2.1214285714285905
+	Average losing time in market:  2.3391472868217056 bars
+	Worst performance: -6.875773390003767% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1min for AAPL. max_bars: 10
+	number of wins: 72
+	Average winning stop_loss:  5.986111111111111 %
+	Average winning take_profit_ratio:  1.0555555555555545
+	Average winning time in market:  2.888888888888889 bars
+	Best performance: 11.201052312051004% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 8974
+	Average losing stop_loss:  1.391575663026521 %
+	Average losing take_profit_ratio:  2.1214285714285745
+	Average losing time in market:  5.141185647425897 bars
+	Worst performance: -6.875773390003767% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1min for AAPL. max_bars: 20
+	number of wins: 98
+	Average winning stop_loss:  6.459183673469388 %
+	Average winning take_profit_ratio:  1.054081632653059
+	Average winning time in market:  5.673469387755102 bars
+	Best performance: 11.201052312051004% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 22561
+	Average losing stop_loss:  1.3701520322680731 %
+	Average losing take_profit_ratio:  2.1214285714284475
+	Average losing time in market:  10.868445547626434 bars
+	Worst performance: -6.875773390003767% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1min for AAPL. max_bars: 50
+	number of wins: 196
+	Average winning stop_loss:  7.025510204081633 %
+	Average winning take_profit_ratio:  1.0535714285714304
+	Average winning time in market:  20.540816326530614 bars
+	Best performance: 11.201052312051004% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 76741
+	Average losing stop_loss:  1.3667791662866005 %
+	Average losing take_profit_ratio:  2.121428571429009
+	Average losing time in market:  28.031104624646538 bars
+	Worst performance: -6.875773390003767% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1min for AAPL. max_bars: 60
+	number of wins: 227
+	Average winning stop_loss:  7.145374449339207 %
+	Average winning take_profit_ratio:  1.0530837004405318
+	Average winning time in market:  25.370044052863435 bars
+	Best performance: 11.201052312051004% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 97328
+	Average losing stop_loss:  1.3789556962025316 %
+	Average losing take_profit_ratio:  2.1214285714290924
+	Average losing time in market:  33.634925201380895 bars
+	Worst performance: -6.875773390003767% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1min for AAPL. max_bars: 70
+	number of wins: 390
+	Average winning stop_loss:  6.47948717948718 %
+	Average winning take_profit_ratio:  1.0517948717948784
+	Average winning time in market:  41.297435897435896 bars
+	Best performance: 11.201052312051004% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 119175
+	Average losing stop_loss:  1.393186490455213 %
+	Average losing take_profit_ratio:  2.121428571429149
+	Average losing time in market:  39.29709251101322 bars
+	Worst performance: -6.875773390003767% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1min for AAPL. max_bars: 100
+	number of wins: 766
+	Average winning stop_loss:  5.985639686684073 %
+	Average winning take_profit_ratio:  1.050913838120093
+	Average winning time in market:  60.86422976501306 bars
+	Best performance: 11.201052312051004% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 187215
+	Average losing stop_loss:  1.4259113853056646 %
+	Average losing take_profit_ratio:  2.121428571427828
+	Average losing time in market:  55.77113479154982 bars
+	Worst performance: -7.0782262722197276% -> sl: 4, tpr: 1.05, bars_in_market: 85
+
+
+
+
+
+
+
+Calculating outcomes of 5min for AMZN. max_bars: 5
+	number of wins: 233
+	Average winning stop_loss:  4.978540772532189 %
+	Average winning take_profit_ratio:  1.0671673819742504
+	Average winning time in market:  1.944206008583691 bars
+	Best performance: 13.502337774488025% -> sl: 1, tpr: 1.05, bars_in_market: 4
+
+	number of losses: 10164
+	Average losing stop_loss:  1.5096418732782368 %
+	Average losing take_profit_ratio:  2.1214285714285497
+	Average losing time in market:  2.340909090909091 bars
+	Worst performance: -9.042165528864667% -> sl: 2, tpr: 1.05, bars_in_market: 3
+
+
+
+Calculating outcomes of 5min for AMZN. max_bars: 10
+	number of wins: 450
+	Average winning stop_loss:  4.984444444444445 %
+	Average winning take_profit_ratio:  1.0676666666666748
+	Average winning time in market:  4.364444444444445 bars
+	Best performance: 14.267078585400682% -> sl: 1, tpr: 1.05, bars_in_market: 8
+
+	number of losses: 25438
+	Average losing stop_loss:  1.485140341221794 %
+	Average losing take_profit_ratio:  2.1214285714284378
+	Average losing time in market:  5.174188222344524 bars
+	Worst performance: -9.431184943749342% -> sl: 3, tpr: 1.05, bars_in_market: 6
+
+
+
+Calculating outcomes of 5min for AMZN. max_bars: 20
+	number of wins: 846
+	Average winning stop_loss:  5.080378250591017 %
+	Average winning take_profit_ratio:  1.0658983451536583
+	Average winning time in market:  8.921985815602836 bars
+	Best performance: 14.267078585400682% -> sl: 1, tpr: 1.05, bars_in_market: 8
+
+	number of losses: 60753
+	Average losing stop_loss:  1.505472980758152 %
+	Average losing take_profit_ratio:  2.1214285714289054
+	Average losing time in market:  10.594999423896763 bars
+	Worst performance: -11.998774071614655% -> sl: 6, tpr: 1.05, bars_in_market: 16
+
+
+
+Calculating outcomes of 5min for AMZN. max_bars: 50
+	number of wins: 2982
+	Average winning stop_loss:  5.202883970489604 %
+	Average winning take_profit_ratio:  1.0597417840375776
+	Average winning time in market:  29.03386988598256 bars
+	Best performance: 14.267078585400682% -> sl: 1, tpr: 1.05, bars_in_market: 8
+
+	number of losses: 164563
+	Average losing stop_loss:  1.6471138712833382 %
+	Average losing take_profit_ratio:  2.1214285714281838
+	Average losing time in market:  25.48194308562678 bars
+	Worst performance: -12.043702455710422% -> sl: 6, tpr: 1.05, bars_in_market: 20
+
+
+
+Calculating outcomes of 5min for AMZN. max_bars: 60
+	number of wins: 4034
+	Average winning stop_loss:  5.198810114030739 %
+	Average winning take_profit_ratio:  1.0577590480912893
+	Average winning time in market:  35.703767972235994 bars
+	Best performance: 14.267078585400682% -> sl: 1, tpr: 1.05, bars_in_market: 8
+
+	number of losses: 195881
+	Average losing stop_loss:  1.6980666833434586 %
+	Average losing take_profit_ratio:  2.121428571427714
+	Average losing time in market:  30.129542936783047 bars
+	Worst performance: -12.043702455710422% -> sl: 6, tpr: 1.05, bars_in_market: 20
+
+
+
+Calculating outcomes of 5min for AMZN. max_bars: 70
+	number of wins: 5017
+	Average winning stop_loss:  5.201315527207495 %
+	Average winning take_profit_ratio:  1.0568367550330013
+	Average winning time in market:  41.4165836157066 bars
+	Best performance: 14.267078585400682% -> sl: 1, tpr: 1.05, bars_in_market: 8
+
+	number of losses: 225491
+	Average losing stop_loss:  1.7581721665166237 %
+	Average losing take_profit_ratio:  2.1214285714273897
+	Average losing time in market:  34.65007916058734 bars
+	Worst performance: -12.043702455710422% -> sl: 6, tpr: 1.05, bars_in_market: 20
+
+
+
+Calculating outcomes of 5min for AMZN. max_bars: 100
+	number of wins: 9719
+	Average winning stop_loss:  5.1592756456425555 %
+	Average winning take_profit_ratio:  1.0558339335322608
+	Average winning time in market:  62.53832698837329 bars
+	Best performance: 18.129286768954213% -> sl: 1, tpr: 1.1, bars_in_market: 78
+
+	number of losses: 299835
+	Average losing stop_loss:  1.9337235479513732 %
+	Average losing take_profit_ratio:  2.1215643603965066
+	Average losing time in market:  46.91626728033752 bars
+	Worst performance: -14.335438317338776% -> sl: 10, tpr: 1.05, bars_in_market: 89
+
+
+
+
+
+
+
+Calculating outcomes of 1h for AMZN. max_bars: 5
+	number of wins: 682
+	Average winning stop_loss:  4.978005865102639 %
+	Average winning take_profit_ratio:  1.0561583577712572
+	Average winning time in market:  2.3240469208211145 bars
+	Best performance: 17.89929036933539% -> sl: 1, tpr: 1.05, bars_in_market: 4
+
+	number of losses: 20958
+	Average losing stop_loss:  1.7929191716766868 %
+	Average losing take_profit_ratio:  2.1214285714284538
+	Average losing time in market:  2.066800267201069 bars
+	Worst performance: -13.499711977082708% -> sl: 4, tpr: 1.05, bars_in_market: 4
+
+
+
+Calculating outcomes of 1h for AMZN. max_bars: 10
+	number of wins: 2222
+	Average winning stop_loss:  4.994599459945994 %
+	Average winning take_profit_ratio:  1.0564806480647988
+	Average winning time in market:  5.697119711971197 bars
+	Best performance: 20.225939379897564% -> sl: 1, tpr: 1.2, bars_in_market: 9
+
+	number of losses: 38860
+	Average losing stop_loss:  2.1325270200720534 %
+	Average losing take_profit_ratio:  2.121538857437007
+	Average losing time in market:  4.273880597014926 bars
+	Worst performance: -14.335438317338776% -> sl: 6, tpr: 1.05, bars_in_market: 7
+
+
+
+Calculating outcomes of 1h for AMZN. max_bars: 20
+	number of wins: 5829
+	Average winning stop_loss:  5.065705952993652 %
+	Average winning take_profit_ratio:  1.0592039800996025
+	Average winning time in market:  11.109452736318408 bars
+	Best performance: 21.20603015075376% -> sl: 1, tpr: 1.2, bars_in_market: 14
+
+	number of losses: 65620
+	Average losing stop_loss:  2.5954891801280096 %
+	Average losing take_profit_ratio:  2.12162450472454
+	Average losing time in market:  8.323986589454435 bars
+	Worst performance: -14.822505685751008% -> sl: 8, tpr: 1.05, bars_in_market: 11
+
+
+
+Calculating outcomes of 1h for AMZN. max_bars: 50
+	number of wins: 13924
+	Average winning stop_loss:  5.271689169778799 %
+	Average winning take_profit_ratio:  1.0699188451593573
+	Average winning time in market:  23.63659867854065 bars
+	Best performance: 32.91218942743425% -> sl: 1, tpr: 1.2, bars_in_market: 48
+
+	number of losses: 111721
+	Average losing stop_loss:  3.2770651891766094 %
+	Average losing take_profit_ratio:  2.1258353398203367
+	Average losing time in market:  18.644578906382865 bars
+	Worst performance: -14.97384266113908% -> sl: 8, tpr: 1.05, bars_in_market: 21
+
+
+
+Calculating outcomes of 1h for AMZN. max_bars: 60
+	number of wins: 15689
+	Average winning stop_loss:  5.326725731404169 %
+	Average winning take_profit_ratio:  1.072413793103343
+	Average winning time in market:  27.152208553763785 bars
+	Best performance: 35.31064463888306% -> sl: 1, tpr: 1.2, bars_in_market: 58
+
+	number of losses: 123167
+	Average losing stop_loss:  3.3999772666379795 %
+	Average losing take_profit_ratio:  2.128377325095849
+	Average losing time in market:  21.971144868349477 bars
+	Worst performance: -14.97384266113908% -> sl: 8, tpr: 1.05, bars_in_market: 21
+
+
+
+Calculating outcomes of 1h for AMZN. max_bars: 70
+	number of wins: 17033
+	Average winning stop_loss:  5.367228321493571 %
+	Average winning take_profit_ratio:  1.0738243409850154
+	Average winning time in market:  30.241355016732225 bars
+	Best performance: 35.31064463888306% -> sl: 1, tpr: 1.2, bars_in_market: 58
+
+	number of losses: 132280
+	Average losing stop_loss:  3.501103719383127 %
+	Average losing take_profit_ratio:  2.1303235560935248
+	Average losing time in market:  24.897293619594798 bars
+	Worst performance: -15.014204545454554% -> sl: 10, tpr: 1.05, bars_in_market: 67
+
+
+
+Calculating outcomes of 1h for AMZN. max_bars: 100
+	number of wins: 19796
+	Average winning stop_loss:  5.451353808850273 %
+	Average winning take_profit_ratio:  1.0760279854513903
+	Average winning time in market:  38.9009900990099 bars
+	Best performance: 35.616643922661% -> sl: 2, tpr: 1.2, bars_in_market: 96
+
+	number of losses: 153579
+	Average losing stop_loss:  3.7389356617766754 %
+	Average losing take_profit_ratio:  2.136155008171612
+	Average losing time in market:  33.19900507230806 bars
+	Worst performance: -16.217882836587865% -> sl: 10, tpr: 1.05, bars_in_market: 88
+
+
+
+
+
+
+
+Calculating outcomes of 1day for AMZN. max_bars: 5
+	number of wins: 7417
+	Average winning stop_loss:  5.0272347310233245 %
+	Average winning take_profit_ratio:  1.0639274639343286
+	Average winning time in market:  2.22178778481866 bars
+	Best performance: 28.26149015129889% -> sl: 1, tpr: 1.2, bars_in_market: 4
+
+	number of losses: 74582
+	Average losing stop_loss:  2.887989059022284 %
+	Average losing take_profit_ratio:  2.122575822584964
+	Average losing time in market:  1.6976616341744657 bars
+	Worst performance: -28.71933736858872% -> sl: 10, tpr: 1.05, bars_in_market: 1
+
+
+
+Calculating outcomes of 1day for AMZN. max_bars: 10
+	number of wins: 13184
+	Average winning stop_loss:  5.17748786407767 %
+	Average winning take_profit_ratio:  1.0681545813105957
+	Average winning time in market:  4.261832524271845 bars
+	Best performance: 52.05515088449532% -> sl: 1, tpr: 1.5, bars_in_market: 9
+
+	number of losses: 114583
+	Average losing stop_loss:  3.404833177696517 %
+	Average losing take_profit_ratio:  2.1271017515693322
+	Average losing time in market:  3.487777418988855 bars
+	Worst performance: -28.71933736858872% -> sl: 10, tpr: 1.05, bars_in_market: 1
+
+
+
+Calculating outcomes of 1day for AMZN. max_bars: 20
+	number of wins: 19381
+	Average winning stop_loss:  5.364222692327537 %
+	Average winning take_profit_ratio:  1.0759455136471356
+	Average winning time in market:  7.314122078324132 bars
+	Best performance: 66.85697973165856% -> sl: 1, tpr: 1.5, bars_in_market: 11
+
+	number of losses: 159679
+	Average losing stop_loss:  3.9081219196012 %
+	Average losing take_profit_ratio:  2.136318488968262
+	Average losing time in market:  6.4469028488404865 bars
+	Worst performance: -28.798727128082746% -> sl: 10, tpr: 1.05, bars_in_market: 10
+
+
+
+Calculating outcomes of 1day for AMZN. max_bars: 50
+	number of wins: 24712
+	Average winning stop_loss:  5.567254775008093 %
+	Average winning take_profit_ratio:  1.0907757364839648
+	Average winning time in market:  12.718072191647783 bars
+	Best performance: 113.88962239239504% -> sl: 8, tpr: 2, bars_in_market: 44
+
+	number of losses: 209571
+	Average losing stop_loss:  4.430450778017951 %
+	Average losing take_profit_ratio:  2.1618940597689384
+	Average losing time in market:  12.412380529748868 bars
+	Worst performance: -28.798727128082746% -> sl: 10, tpr: 1.05, bars_in_market: 10
+
+
+
+Calculating outcomes of 1day for AMZN. max_bars: 60
+	number of wins: 25171
+	Average winning stop_loss:  5.599181597870565 %
+	Average winning take_profit_ratio:  1.0927257558297856
+	Average winning time in market:  13.766159469230464 bars
+	Best performance: 113.88962239239504% -> sl: 8, tpr: 2, bars_in_market: 44
+
+	number of losses: 216485
+	Average losing stop_loss:  4.504150403030233 %
+	Average losing take_profit_ratio:  2.1684153636502415
+	Average losing time in market:  13.745608240755711 bars
+	Worst performance: -28.798727128082746% -> sl: 10, tpr: 1.05, bars_in_market: 10
+
+
+
+Calculating outcomes of 1day for AMZN. max_bars: 70
+	number of wins: 25648
+	Average winning stop_loss:  5.621023081721772 %
+	Average winning take_profit_ratio:  1.0948046631312875
+	Average winning time in market:  14.810745477230194 bars
+	Best performance: 113.88962239239504% -> sl: 8, tpr: 2, bars_in_market: 44
+
+	number of losses: 220396
+	Average losing stop_loss:  4.539111417630084 %
+	Average losing take_profit_ratio:  2.174045808453046
+	Average losing time in market:  14.729309969327938 bars
+	Worst performance: -28.798727128082746% -> sl: 10, tpr: 1.05, bars_in_market: 10
+
+
+
+Calculating outcomes of 1day for AMZN. max_bars: 100
+	number of wins: 26054
+	Average winning stop_loss:  5.666692254548246 %
+	Average winning take_profit_ratio:  1.0970983342285636
+	Average winning time in market:  16.442312120979505 bars
+	Best performance: 113.88962239239504% -> sl: 8, tpr: 2, bars_in_market: 44
+
+	number of losses: 228100
+	Average losing stop_loss:  4.613081981587023 %
+	Average losing take_profit_ratio:  2.1865201665927754
+	Average losing time in market:  17.324261288908374 bars
+	Worst performance: -28.798727128082746% -> sl: 10, tpr: 1.05, bars_in_market: 10
+
+
+
+
+
+
+
+Calculating outcomes of 1min for AMZN. max_bars: 5
+	number of wins: 168
+	Average winning stop_loss:  5.035714285714286 %
+	Average winning take_profit_ratio:  1.061904761904764
+	Average winning time in market:  1.9285714285714286 bars
+	Best performance: 10.910064716728467% -> sl: 1, tpr: 1.05, bars_in_market: 1
+
+	number of losses: 6104
+	Average losing stop_loss:  1.606651376146789 %
+	Average losing take_profit_ratio:  2.121428571428604
+	Average losing time in market:  2.25 bars
+	Worst performance: -8.775033614040058% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1min for AMZN. max_bars: 10
+	number of wins: 330
+	Average winning stop_loss:  5.084848484848485 %
+	Average winning take_profit_ratio:  1.0633333333333368
+	Average winning time in market:  4.327272727272727 bars
+	Best performance: 11.469727313810221% -> sl: 1, tpr: 1.05, bars_in_market: 7
+
+	number of losses: 15785
+	Average losing stop_loss:  1.512638580931264 %
+	Average losing take_profit_ratio:  2.1214285714284835
+	Average losing time in market:  5.243015521064302 bars
+	Worst performance: -8.956013416116438% -> sl: 1, tpr: 1.05, bars_in_market: 7
+
+
+
+Calculating outcomes of 1min for AMZN. max_bars: 20
+	number of wins: 579
+	Average winning stop_loss:  5.172711571675302 %
+	Average winning take_profit_ratio:  1.0645077720207243
+	Average winning time in market:  8.53713298791019 bars
+	Best performance: 12.72013844221874% -> sl: 1, tpr: 1.05, bars_in_market: 19
+
+	number of losses: 40530
+	Average losing stop_loss:  1.4474956822107081 %
+	Average losing take_profit_ratio:  2.121428571428657
+	Average losing time in market:  11.025215889464594 bars
+	Worst performance: -9.042165528864667% -> sl: 2, tpr: 1.05, bars_in_market: 19
+
+
+
+Calculating outcomes of 1min for AMZN. max_bars: 50
+	number of wins: 1334
+	Average winning stop_loss:  5.160419790104948 %
+	Average winning take_profit_ratio:  1.065104947526223
+	Average winning time in market:  23.705397301349326 bars
+	Best performance: 14.267078585400682% -> sl: 1, tpr: 1.05, bars_in_market: 44
+
+	number of losses: 133021
+	Average losing stop_loss:  1.429353260011577 %
+	Average losing take_profit_ratio:  2.12142857142888
+	Average losing time in market:  27.70925643319476 bars
+	Worst performance: -9.042165528864667% -> sl: 2, tpr: 1.05, bars_in_market: 19
+
+
+
+Calculating outcomes of 1min for AMZN. max_bars: 60
+	number of wins: 1598
+	Average winning stop_loss:  5.176470588235294 %
+	Average winning take_profit_ratio:  1.0651126408009797
+	Average winning time in market:  28.827909887359198 bars
+	Best performance: 14.267078585400682% -> sl: 1, tpr: 1.05, bars_in_market: 44
+
+	number of losses: 168406
+	Average losing stop_loss:  1.4295036993931332 %
+	Average losing take_profit_ratio:  2.1214285714281167
+	Average losing time in market:  33.33664477512678 bars
+	Worst performance: -9.042165528864667% -> sl: 2, tpr: 1.05, bars_in_market: 19
+
+
+
+Calculating outcomes of 1min for AMZN. max_bars: 70
+	number of wins: 1903
+	Average winning stop_loss:  5.173935890698896 %
+	Average winning take_profit_ratio:  1.064792433000498
+	Average winning time in market:  34.464529689963214 bars
+	Best performance: 14.267078585400682% -> sl: 1, tpr: 1.05, bars_in_market: 44
+
+	number of losses: 205800
+	Average losing stop_loss:  1.433673469387755 %
+	Average losing take_profit_ratio:  2.121428571427595
+	Average losing time in market:  38.99034013605442 bars
+	Worst performance: -9.524143739472203% -> sl: 2, tpr: 1.05, bars_in_market: 69
+
+
+
+Calculating outcomes of 1min for AMZN. max_bars: 100
+	number of wins: 2447
+	Average winning stop_loss:  5.202288516550879 %
+	Average winning take_profit_ratio:  1.0657539844707946
+	Average winning time in market:  45.674703718839396 bars
+	Best performance: 14.270626591318381% -> sl: 1, tpr: 1.05, bars_in_market: 71
+
+	number of losses: 317030
+	Average losing stop_loss:  1.4549348642084345 %
+	Average losing take_profit_ratio:  2.1214285714267707
+	Average losing time in market:  55.00152351512475 bars
+	Worst performance: -10.238237368926843% -> sl: 3, tpr: 1.05, bars_in_market: 96
+
+
+
+
+
+
+
+Calculating outcomes of 5min for GOOG. max_bars: 5
+	number of wins: 199
+	Average winning stop_loss:  4.894472361809045 %
+	Average winning take_profit_ratio:  1.0540201005025156
+	Average winning time in market:  1.914572864321608 bars
+	Best performance: 10.384199338686834% -> sl: 1, tpr: 1.05, bars_in_market: 2
+
+	number of losses: 7889
+	Average losing stop_loss:  1.5785270629991126 %
+	Average losing take_profit_ratio:  2.1214285714286034
+	Average losing time in market:  2.339840283939663 bars
+	Worst performance: -10.057172035281091% -> sl: 10, tpr: 1.05, bars_in_market: 3
+
+
+
+Calculating outcomes of 5min for GOOG. max_bars: 10
+	number of wins: 378
+	Average winning stop_loss:  4.936507936507937 %
+	Average winning take_profit_ratio:  1.0542328042328097
+	Average winning time in market:  4.256613756613756 bars
+	Best performance: 10.384199338686834% -> sl: 1, tpr: 1.05, bars_in_market: 2
+
+	number of losses: 19474
+	Average losing stop_loss:  1.5147375988497485 %
+	Average losing take_profit_ratio:  2.121428571428461
+	Average losing time in market:  5.149532710280374 bars
+	Worst performance: -10.057172035281091% -> sl: 10, tpr: 1.05, bars_in_market: 3
+
+
+
+Calculating outcomes of 5min for GOOG. max_bars: 20
+	number of wins: 784
+	Average winning stop_loss:  4.954081632653061 %
+	Average winning take_profit_ratio:  1.054081632653049
+	Average winning time in market:  9.901785714285714 bars
+	Best performance: 10.384199338686834% -> sl: 1, tpr: 1.05, bars_in_market: 2
+
+	number of losses: 47453
+	Average losing stop_loss:  1.50095884348724 %
+	Average losing take_profit_ratio:  2.121428571428766
+	Average losing time in market:  10.703053547720902 bars
+	Worst performance: -10.057172035281091% -> sl: 10, tpr: 1.05, bars_in_market: 3
+
+
+
+Calculating outcomes of 5min for GOOG. max_bars: 50
+	number of wins: 3055
+	Average winning stop_loss:  4.964320785597382 %
+	Average winning take_profit_ratio:  1.0544517184943176
+	Average winning time in market:  28.892307692307693 bars
+	Best performance: 10.49293510382601% -> sl: 1, tpr: 1.05, bars_in_market: 28
+
+	number of losses: 133574
+	Average losing stop_loss:  1.5811235719526255 %
+	Average losing take_profit_ratio:  2.1214285714288654
+	Average losing time in market:  25.988365999371133 bars
+	Worst performance: -10.233122513808208% -> sl: 10, tpr: 1.05, bars_in_market: 34
+
+
+
+Calculating outcomes of 5min for GOOG. max_bars: 60
+	number of wins: 3912
+	Average winning stop_loss:  4.95961145194274 %
+	Average winning take_profit_ratio:  1.0544989775051847
+	Average winning time in market:  34.53450920245399 bars
+	Best performance: 11.127851311722287% -> sl: 1, tpr: 1.05, bars_in_market: 59
+
+	number of losses: 160755
+	Average losing stop_loss:  1.6140648813411713 %
+	Average losing take_profit_ratio:  2.121428571428253
+	Average losing time in market:  30.805399521010234 bars
+	Worst performance: -10.233122513808208% -> sl: 10, tpr: 1.05, bars_in_market: 34
+
+
+
+Calculating outcomes of 5min for GOOG. max_bars: 70
+	number of wins: 4888
+	Average winning stop_loss:  4.955400981996727 %
+	Average winning take_profit_ratio:  1.0546644844518103
+	Average winning time in market:  40.451513911620296 bars
+	Best performance: 11.127851311722287% -> sl: 1, tpr: 1.05, bars_in_market: 59
+
+	number of losses: 187614
+	Average losing stop_loss:  1.6547645698082232 %
+	Average losing take_profit_ratio:  2.1214285714278227
+	Average losing time in market:  35.65935377956869 bars
+	Worst performance: -10.233122513808208% -> sl: 10, tpr: 1.05, bars_in_market: 34
+
+
+
+Calculating outcomes of 5min for GOOG. max_bars: 100
+	number of wins: 8843
+	Average winning stop_loss:  4.979758000678503 %
+	Average winning take_profit_ratio:  1.056230917109617
+	Average winning time in market:  60.2986543028384 bars
+	Best performance: 14.531947394216637% -> sl: 1, tpr: 1.1, bars_in_market: 86
+
+	number of losses: 258020
+	Average losing stop_loss:  1.7956863809007053 %
+	Average losing take_profit_ratio:  2.1214285714271197
+	Average losing time in market:  48.877265328269125 bars
+	Worst performance: -10.301687378606106% -> sl: 10, tpr: 1.05, bars_in_market: 99
+
+
+
+
+
+
+
+Calculating outcomes of 1h for GOOG. max_bars: 5
+	number of wins: 412
+	Average winning stop_loss:  4.912621359223301 %
+	Average winning take_profit_ratio:  1.0538834951456377
+	Average winning time in market:  2.4199029126213594 bars
+	Best performance: 11.127851311722287% -> sl: 1, tpr: 1.05, bars_in_market: 4
+
+	number of losses: 16317
+	Average losing stop_loss:  1.6726726726726726 %
+	Average losing take_profit_ratio:  2.1214285714284795
+	Average losing time in market:  2.135135135135135 bars
+	Worst performance: -9.177738027374296% -> sl: 2, tpr: 1.05, bars_in_market: 2
+
+
+
+Calculating outcomes of 1h for GOOG. max_bars: 10
+	number of wins: 1479
+	Average winning stop_loss:  4.9371196754563895 %
+	Average winning take_profit_ratio:  1.0545977011493997
+	Average winning time in market:  5.9452332657200815 bars
+	Best performance: 14.435556497324786% -> sl: 1, tpr: 1.1, bars_in_market: 9
+
+	number of losses: 31829
+	Average losing stop_loss:  1.9287442269628325 %
+	Average losing take_profit_ratio:  2.1214285714284533
+	Average losing time in market:  4.460963272487354 bars
+	Worst performance: -10.029340585151065% -> sl: 10, tpr: 1.05, bars_in_market: 8
+
+
+
+Calculating outcomes of 1h for GOOG. max_bars: 20
+	number of wins: 4475
+	Average winning stop_loss:  4.980335195530726 %
+	Average winning take_profit_ratio:  1.055162011173262
+	Average winning time in market:  11.820111731843575 bars
+	Best performance: 14.672454404187466% -> sl: 1, tpr: 1.05, bars_in_market: 14
+
+	number of losses: 55946
+	Average losing stop_loss:  2.3008615450613092 %
+	Average losing take_profit_ratio:  2.1220605583958863
+	Average losing time in market:  8.67742108461731 bars
+	Worst performance: -10.564847260871502% -> sl: 10, tpr: 1.05, bars_in_market: 19
+
+
+
+Calculating outcomes of 1h for GOOG. max_bars: 50
+	number of wins: 11941
+	Average winning stop_loss:  5.201658152583536 %
+	Average winning take_profit_ratio:  1.0596223096892072
+	Average winning time in market:  25.068084750020937 bars
+	Best performance: 25.67972212240989% -> sl: 1, tpr: 1.2, bars_in_market: 48
+
+	number of losses: 99220
+	Average losing stop_loss:  3.0162568030638983 %
+	Average losing take_profit_ratio:  2.125110864745562
+	Average losing time in market:  19.45894980850635 bars
+	Worst performance: -12.328921023805597% -> sl: 8, tpr: 1.05, bars_in_market: 31
+
+
+
+Calculating outcomes of 1h for GOOG. max_bars: 60
+	number of wins: 13775
+	Average winning stop_loss:  5.242468239564428 %
+	Average winning take_profit_ratio:  1.0615499092557517
+	Average winning time in market:  28.949038112522686 bars
+	Best performance: 25.67972212240989% -> sl: 1, tpr: 1.2, bars_in_market: 48
+
+	number of losses: 109527
+	Average losing stop_loss:  3.1624165730824365 %
+	Average losing take_profit_ratio:  2.1263784272377158
+	Average losing time in market:  22.77092406438595 bars
+	Worst performance: -12.328921023805597% -> sl: 8, tpr: 1.05, bars_in_market: 31
+
+
+
+Calculating outcomes of 1h for GOOG. max_bars: 70
+	number of wins: 15307
+	Average winning stop_loss:  5.279545306069119 %
+	Average winning take_profit_ratio:  1.0635460900240283
+	Average winning time in market:  32.54543672829424 bars
+	Best performance: 25.67972212240989% -> sl: 1, tpr: 1.2, bars_in_market: 48
+
+	number of losses: 118280
+	Average losing stop_loss:  3.2910297598917824 %
+	Average losing take_profit_ratio:  2.1275672133925805
+	Average losing time in market:  25.887385864051403 bars
+	Worst performance: -12.328921023805597% -> sl: 8, tpr: 1.05, bars_in_market: 31
+
+
+
+Calculating outcomes of 1h for GOOG. max_bars: 100
+	number of wins: 18338
+	Average winning stop_loss:  5.334660268295343 %
+	Average winning take_profit_ratio:  1.0684180390443805
+	Average winning time in market:  41.700621659941106 bars
+	Best performance: 25.67972212240989% -> sl: 1, tpr: 1.2, bars_in_market: 48
+
+	number of losses: 139544
+	Average losing stop_loss:  3.6148383305624034 %
+	Average losing take_profit_ratio:  2.13048250014353
+	Average losing time in market:  34.84609872155019 bars
+	Worst performance: -14.018691588785046% -> sl: 10, tpr: 1.05, bars_in_market: 99
+
+
+
+
+
+
+
+Calculating outcomes of 1day for GOOG. max_bars: 5
+	number of wins: 5314
+	Average winning stop_loss:  4.977229958599925 %
+	Average winning take_profit_ratio:  1.0589104252917751
+	Average winning time in market:  2.2830259691381256 bars
+	Best performance: 21.771058212744535% -> sl: 1, tpr: 1.2, bars_in_market: 4
+
+	number of losses: 62618
+	Average losing stop_loss:  2.581478169216519 %
+	Average losing take_profit_ratio:  2.122570187486374
+	Average losing time in market:  1.796320546807627 bars
+	Worst performance: -19.00183676850279% -> sl: 4, tpr: 1.05, bars_in_market: 2
+
+
+
+Calculating outcomes of 1day for GOOG. max_bars: 10
+	number of wins: 10216
+	Average winning stop_loss:  5.118148003132341 %
+	Average winning take_profit_ratio:  1.0639780736100093
+	Average winning time in market:  4.471515270164448 bars
+	Best performance: 26.096224663106042% -> sl: 1, tpr: 1.2, bars_in_market: 5
+
+	number of losses: 99427
+	Average losing stop_loss:  3.1034125539340423 %
+	Average losing take_profit_ratio:  2.124527542820905
+	Average losing time in market:  3.663763364076156 bars
+	Worst performance: -24.20247460842169% -> sl: 10, tpr: 1.05, bars_in_market: 9
+
+
+
+Calculating outcomes of 1day for GOOG. max_bars: 20
+	number of wins: 15861
+	Average winning stop_loss:  5.3257045583506715 %
+	Average winning take_profit_ratio:  1.0709570644977005
+	Average winning time in market:  7.873211020742702 bars
+	Best performance: 26.368331312430065% -> sl: 1, tpr: 1.2, bars_in_market: 10
+
+	number of losses: 143909
+	Average losing stop_loss:  3.6705418007212893 %
+	Average losing take_profit_ratio:  2.129341806280429
+	Average losing time in market:  6.892008144035467 bars
+	Worst performance: -24.4343644040343% -> sl: 10, tpr: 1.05, bars_in_market: 11
+
+
+
+Calculating outcomes of 1day for GOOG. max_bars: 50
+	number of wins: 21902
+	Average winning stop_loss:  5.6067025842388825 %
+	Average winning take_profit_ratio:  1.08284403250814
+	Average winning time in market:  14.600127842206192 bars
+	Best performance: 56.88751195257219% -> sl: 2, tpr: 1.5, bars_in_market: 36
+
+	number of losses: 198069
+	Average losing stop_loss:  4.307150538448722 %
+	Average losing take_profit_ratio:  2.1474854722336896
+	Average losing time in market:  13.682302631911101 bars
+	Worst performance: -24.4343644040343% -> sl: 10, tpr: 1.05, bars_in_market: 11
+
+
+
+Calculating outcomes of 1day for GOOG. max_bars: 60
+	number of wins: 22528
+	Average winning stop_loss:  5.6506125710227275 %
+	Average winning take_profit_ratio:  1.0851429332383136
+	Average winning time in market:  15.888316761363637 bars
+	Best performance: 56.88751195257219% -> sl: 2, tpr: 1.5, bars_in_market: 36
+
+	number of losses: 206046
+	Average losing stop_loss:  4.393465536821875 %
+	Average losing take_profit_ratio:  2.1529427894734154
+	Average losing time in market:  15.290372052842569 bars
+	Worst performance: -24.4343644040343% -> sl: 10, tpr: 1.05, bars_in_market: 11
+
+
+
+Calculating outcomes of 1day for GOOG. max_bars: 70
+	number of wins: 22921
+	Average winning stop_loss:  5.676541163125518 %
+	Average winning take_profit_ratio:  1.0861764320925102
+	Average winning time in market:  16.77370097290694 bars
+	Best performance: 56.88751195257219% -> sl: 2, tpr: 1.5, bars_in_market: 36
+
+	number of losses: 212211
+	Average losing stop_loss:  4.453166895212783 %
+	Average losing take_profit_ratio:  2.1582493367442197
+	Average losing time in market:  16.8301596052985 bars
+	Worst performance: -24.4343644040343% -> sl: 10, tpr: 1.05, bars_in_market: 11
+
+
+
+Calculating outcomes of 1day for GOOG. max_bars: 100
+	number of wins: 23712
+	Average winning stop_loss:  5.712972334682861 %
+	Average winning take_profit_ratio:  1.0904225708498714
+	Average winning time in market:  18.964827935222672 bars
+	Best performance: 107.20932880222458% -> sl: 1, tpr: 2, bars_in_market: 90
+
+	number of losses: 225066
+	Average losing stop_loss:  4.569735099926244 %
+	Average losing take_profit_ratio:  2.1747816196129772
+	Average losing time in market:  21.199679205210916 bars
+	Worst performance: -24.4343644040343% -> sl: 10, tpr: 1.05, bars_in_market: 11
+
+
+
+
+
+
+
+Calculating outcomes of 1min for GOOG. max_bars: 5
+	number of wins: 176
+	Average winning stop_loss:  4.875 %
+	Average winning take_profit_ratio:  1.0500000000000023
+	Average winning time in market:  2.272727272727273 bars
+	Best performance: 9.5305217975566% -> sl: 1, tpr: 1.05, bars_in_market: 3
+
+	number of losses: 4844
+	Average losing stop_loss:  1.7095375722543353 %
+	Average losing take_profit_ratio:  2.121428571428599
+	Average losing time in market:  2.2471098265895955 bars
+	Worst performance: -9.960068454078726% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1min for GOOG. max_bars: 10
+	number of wins: 399
+	Average winning stop_loss:  4.8847117794486214 %
+	Average winning take_profit_ratio:  1.052005012531335
+	Average winning time in market:  4.799498746867168 bars
+	Best performance: 10.21499823134065% -> sl: 1, tpr: 1.05, bars_in_market: 9
+
+	number of losses: 12313
+	Average losing stop_loss:  1.5889710062535531 %
+	Average losing take_profit_ratio:  2.1214285714285173
+	Average losing time in market:  5.213757816941444 bars
+	Worst performance: -10.039931545921291% -> sl: 10, tpr: 1.05, bars_in_market: 6
+
+
+
+Calculating outcomes of 1min for GOOG. max_bars: 20
+	number of wins: 716
+	Average winning stop_loss:  4.896648044692737 %
+	Average winning take_profit_ratio:  1.0550279329608858
+	Average winning time in market:  8.995810055865922 bars
+	Best performance: 10.654257753926302% -> sl: 1, tpr: 1.05, bars_in_market: 11
+
+	number of losses: 31584
+	Average losing stop_loss:  1.514627659574468 %
+	Average losing take_profit_ratio:  2.121428571428446
+	Average losing time in market:  11.037012411347519 bars
+	Worst performance: -10.039931545921291% -> sl: 10, tpr: 1.05, bars_in_market: 6
+
+
+
+Calculating outcomes of 1min for GOOG. max_bars: 50
+	number of wins: 1518
+	Average winning stop_loss:  5.002635046113307 %
+	Average winning take_profit_ratio:  1.054479578392597
+	Average winning time in market:  22.104743083003953 bars
+	Best performance: 10.654257753926302% -> sl: 1, tpr: 1.05, bars_in_market: 11
+
+	number of losses: 105805
+	Average losing stop_loss:  1.456037049288786 %
+	Average losing take_profit_ratio:  2.1214285714291172
+	Average losing time in market:  27.88130995699636 bars
+	Worst performance: -10.039931545921291% -> sl: 10, tpr: 1.05, bars_in_market: 6
+
+
+
+Calculating outcomes of 1min for GOOG. max_bars: 60
+	number of wins: 1793
+	Average winning stop_loss:  4.993865030674846 %
+	Average winning take_profit_ratio:  1.05490797546009
+	Average winning time in market:  27.138315672058003 bars
+	Best performance: 10.654257753926302% -> sl: 1, tpr: 1.05, bars_in_market: 11
+
+	number of losses: 133175
+	Average losing stop_loss:  1.4628646517739816 %
+	Average losing take_profit_ratio:  2.121428571428876
+	Average losing time in market:  33.365571616294346 bars
+	Worst performance: -10.039931545921291% -> sl: 10, tpr: 1.05, bars_in_market: 6
+
+
+
+Calculating outcomes of 1min for GOOG. max_bars: 70
+	number of wins: 2033
+	Average winning stop_loss:  4.979832759468765 %
+	Average winning take_profit_ratio:  1.0543285784554604
+	Average winning time in market:  31.548942449581897 bars
+	Best performance: 10.654257753926302% -> sl: 1, tpr: 1.05, bars_in_market: 11
+
+	number of losses: 162715
+	Average losing stop_loss:  1.4603570660357066 %
+	Average losing take_profit_ratio:  2.121428571428217
+	Average losing time in market:  39.030157023015704 bars
+	Worst performance: -10.039931545921291% -> sl: 10, tpr: 1.05, bars_in_market: 6
+
+
+
+Calculating outcomes of 1min for GOOG. max_bars: 100
+	number of wins: 2894
+	Average winning stop_loss:  4.963372494816863 %
+	Average winning take_profit_ratio:  1.0546993780235303
+	Average winning time in market:  47.472011057360056 bars
+	Best performance: 10.654257753926302% -> sl: 1, tpr: 1.05, bars_in_market: 11
+
+	number of losses: 252532
+	Average losing stop_loss:  1.4605832132165428 %
+	Average losing take_profit_ratio:  2.12142857142716
+	Average losing time in market:  55.231566692537974 bars
+	Worst performance: -10.039931545921291% -> sl: 10, tpr: 1.05, bars_in_market: 6
+
+
+
+
+
+
+
+Calculating outcomes of 5min for MSFT. max_bars: 5
+	number of wins: 80
+	Average winning stop_loss:  4.875 %
+	Average winning take_profit_ratio:  1.0499999999999985
+	Average winning time in market:  2.0 bars
+	Best performance: 8.492040706892347% -> sl: 1, tpr: 1.05, bars_in_market: 1
+
+	number of losses: 5334
+	Average losing stop_loss:  1.332020997375328 %
+	Average losing take_profit_ratio:  2.121428571428601
+	Average losing time in market:  2.3307086614173227 bars
+	Worst performance: -6.842457973037789% -> sl: 1, tpr: 1.05, bars_in_market: 1
+
+
+
+Calculating outcomes of 5min for MSFT. max_bars: 10
+	number of wins: 191
+	Average winning stop_loss:  4.895287958115183 %
+	Average winning take_profit_ratio:  1.050000000000003
+	Average winning time in market:  4.979057591623037 bars
+	Best performance: 8.492040706892347% -> sl: 1, tpr: 1.05, bars_in_market: 1
+
+	number of losses: 13293
+	Average losing stop_loss:  1.3464981569246972 %
+	Average losing take_profit_ratio:  2.1214285714285057
+	Average losing time in market:  5.161664033701949 bars
+	Worst performance: -6.842457973037789% -> sl: 1, tpr: 1.05, bars_in_market: 1
+
+
+
+Calculating outcomes of 5min for MSFT. max_bars: 20
+	number of wins: 449
+	Average winning stop_loss:  4.993318485523385 %
+	Average winning take_profit_ratio:  1.0500000000000076
+	Average winning time in market:  10.763919821826281 bars
+	Best performance: 8.492040706892347% -> sl: 1, tpr: 1.05, bars_in_market: 1
+
+	number of losses: 32928
+	Average losing stop_loss:  1.3594812925170068 %
+	Average losing take_profit_ratio:  2.1214285714284853
+	Average losing time in market:  10.778061224489797 bars
+	Worst performance: -7.004122414513972% -> sl: 1, tpr: 1.05, bars_in_market: 19
+
+
+
+Calculating outcomes of 5min for MSFT. max_bars: 50
+	number of wins: 1241
+	Average winning stop_loss:  5.052377115229653 %
+	Average winning take_profit_ratio:  1.0499999999999756
+	Average winning time in market:  25.96937953263497 bars
+	Best performance: 8.492040706892347% -> sl: 1, tpr: 1.05, bars_in_market: 1
+
+	number of losses: 99057
+	Average losing stop_loss:  1.4316302734789061 %
+	Average losing take_profit_ratio:  2.1214285714290977
+	Average losing time in market:  26.593950957529504 bars
+	Worst performance: -7.96566580942521% -> sl: 2, tpr: 1.05, bars_in_market: 34
+
+
+
+Calculating outcomes of 5min for MSFT. max_bars: 60
+	number of wins: 1615
+	Average winning stop_loss:  5.035294117647059 %
+	Average winning take_profit_ratio:  1.0499999999999707
+	Average winning time in market:  32.6061919504644 bars
+	Best performance: 8.492040706892347% -> sl: 1, tpr: 1.05, bars_in_market: 1
+
+	number of losses: 121359
+	Average losing stop_loss:  1.4604026071407972 %
+	Average losing take_profit_ratio:  2.1214285714291536
+	Average losing time in market:  31.73836303858799 bars
+	Worst performance: -7.96566580942521% -> sl: 2, tpr: 1.05, bars_in_market: 34
+
+
+
+Calculating outcomes of 5min for MSFT. max_bars: 70
+	number of wins: 2042
+	Average winning stop_loss:  5.01126346718903 %
+	Average winning take_profit_ratio:  1.0499999999999774
+	Average winning time in market:  39.28893241919687 bars
+	Best performance: 8.492040706892347% -> sl: 1, tpr: 1.05, bars_in_market: 1
+
+	number of losses: 143073
+	Average losing stop_loss:  1.4943001125299673 %
+	Average losing take_profit_ratio:  2.1214285714286247
+	Average losing time in market:  36.72356768922159 bars
+	Worst performance: -7.96566580942521% -> sl: 2, tpr: 1.05, bars_in_market: 34
+
+
+
+Calculating outcomes of 5min for MSFT. max_bars: 100
+	number of wins: 4028
+	Average winning stop_loss:  4.980635551142006 %
+	Average winning take_profit_ratio:  1.0503972194638298
+	Average winning time in market:  62.11742800397219 bars
+	Best performance: 10.311138494036882% -> sl: 1, tpr: 1.05, bars_in_market: 82
+
+	number of losses: 200172
+	Average losing stop_loss:  1.6268009511819834 %
+	Average losing take_profit_ratio:  2.121428571427661
+	Average losing time in market:  50.178556441460344 bars
+	Worst performance: -9.056105610561055% -> sl: 4, tpr: 1.05, bars_in_market: 92
+
+
+
+
+
+
+
+Calculating outcomes of 1h for MSFT. max_bars: 5
+	number of wins: 222
+	Average winning stop_loss:  4.90990990990991 %
+	Average winning take_profit_ratio:  1.050000000000004
+	Average winning time in market:  2.6171171171171173 bars
+	Best performance: 7.395034592760691% -> sl: 1, tpr: 1.05, bars_in_market: 3
+
+	number of losses: 13335
+	Average losing stop_loss:  1.5191601049868766 %
+	Average losing take_profit_ratio:  2.1214285714285053
+	Average losing time in market:  2.1396325459317587 bars
+	Worst performance: -7.848710831689119% -> sl: 2, tpr: 1.05, bars_in_market: 2
+
+
+
+Calculating outcomes of 1h for MSFT. max_bars: 10
+	number of wins: 824
+	Average winning stop_loss:  4.910194174757281 %
+	Average winning take_profit_ratio:  1.050970873786394
+	Average winning time in market:  6.035194174757281 bars
+	Best performance: 10.965514188321755% -> sl: 1, tpr: 1.05, bars_in_market: 9
+
+	number of losses: 26558
+	Average losing stop_loss:  1.7511860832894044 %
+	Average losing take_profit_ratio:  2.1214285714284347
+	Average losing time in market:  4.511860832894043 bars
+	Worst performance: -9.081607769490665% -> sl: 3, tpr: 1.05, bars_in_market: 8
+
+
+
+Calculating outcomes of 1h for MSFT. max_bars: 20
+	number of wins: 2771
+	Average winning stop_loss:  4.978708047636232 %
+	Average winning take_profit_ratio:  1.0525802959220787
+	Average winning time in market:  11.801154817755323 bars
+	Best performance: 11.251188563424384% -> sl: 1, tpr: 1.1, bars_in_market: 17
+
+	number of losses: 47621
+	Average losing stop_loss:  2.1068646185506394 %
+	Average losing take_profit_ratio:  2.121428571428768
+	Average losing time in market:  8.804204027634867 bars
+	Worst performance: -10.768900973751046% -> sl: 5, tpr: 1.05, bars_in_market: 14
+
+
+
+Calculating outcomes of 1h for MSFT. max_bars: 50
+	number of wins: 8195
+	Average winning stop_loss:  5.137278828553996 %
+	Average winning take_profit_ratio:  1.055997559487587
+	Average winning time in market:  26.819890176937157 bars
+	Best performance: 16.09466907507758% -> sl: 1, tpr: 1.1, bars_in_market: 47
+
+	number of losses: 88529
+	Average losing stop_loss:  2.8004834573981405 %
+	Average losing take_profit_ratio:  2.121936879441126
+	Average losing time in market:  20.331247387861605 bars
+	Worst performance: -11.193372508139344% -> sl: 8, tpr: 1.05, bars_in_market: 48
+
+
+
+Calculating outcomes of 1h for MSFT. max_bars: 60
+	number of wins: 9618
+	Average winning stop_loss:  5.183094198378041 %
+	Average winning take_profit_ratio:  1.0580058224163136
+	Average winning time in market:  31.05323352048243 bars
+	Best performance: 16.09466907507758% -> sl: 1, tpr: 1.1, bars_in_market: 47
+
+	number of losses: 98851
+	Average losing stop_loss:  2.963571435797311 %
+	Average losing take_profit_ratio:  2.1223715490996784
+	Average losing time in market:  23.8994446186685 bars
+	Worst performance: -11.617165950349596% -> sl: 6, tpr: 1.05, bars_in_market: 54
+
+
+
+Calculating outcomes of 1h for MSFT. max_bars: 70
+	number of wins: 11058
+	Average winning stop_loss:  5.226261530113945 %
+	Average winning take_profit_ratio:  1.059658166033611
+	Average winning time in market:  35.47630674624706 bars
+	Best performance: 16.09466907507758% -> sl: 1, tpr: 1.1, bars_in_market: 47
+
+	number of losses: 107892
+	Average losing stop_loss:  3.1194064434805178 %
+	Average losing take_profit_ratio:  2.1226698921148928
+	Average losing time in market:  27.362158454751047 bars
+	Worst performance: -11.617165950349596% -> sl: 6, tpr: 1.05, bars_in_market: 54
+
+
+
+Calculating outcomes of 1h for MSFT. max_bars: 100
+	number of wins: 14114
+	Average winning stop_loss:  5.299773274762647 %
+	Average winning take_profit_ratio:  1.0630898398752242
+	Average winning time in market:  46.61754286524019 bars
+	Best performance: 16.09466907507758% -> sl: 1, tpr: 1.1, bars_in_market: 47
+
+	number of losses: 129407
+	Average losing stop_loss:  3.448615608120117 %
+	Average losing take_profit_ratio:  2.1240512491600523
+	Average losing time in market:  36.98913505451792 bars
+	Worst performance: -13.90978079597468% -> sl: 10, tpr: 1.05, bars_in_market: 93
+
+
+
+
+
+
+
+Calculating outcomes of 1day for MSFT. max_bars: 5
+	number of wins: 3735
+	Average winning stop_loss:  5.0074966532797855 %
+	Average winning take_profit_ratio:  1.0587148594377958
+	Average winning time in market:  2.209370816599732 bars
+	Best performance: 22.41860465116279% -> sl: 1, tpr: 1.2, bars_in_market: 4
+
+	number of losses: 53762
+	Average losing stop_loss:  2.374000223205982 %
+	Average losing take_profit_ratio:  2.12250009300276
+	Average losing time in market:  1.7867638852721253 bars
+	Worst performance: -15.686274509803921% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1day for MSFT. max_bars: 10
+	number of wins: 7460
+	Average winning stop_loss:  5.137533512064343 %
+	Average winning take_profit_ratio:  1.061186327077868
+	Average winning time in market:  4.576407506702413 bars
+	Best performance: 22.869955156950663% -> sl: 1, tpr: 1.2, bars_in_market: 8
+
+	number of losses: 87266
+	Average losing stop_loss:  2.831778699608095 %
+	Average losing take_profit_ratio:  2.123691930420136
+	Average losing time in market:  3.7338940710013064 bars
+	Worst performance: -15.686274509803921% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1day for MSFT. max_bars: 20
+	number of wins: 12399
+	Average winning stop_loss:  5.302927655456085 %
+	Average winning take_profit_ratio:  1.0661908218404121
+	Average winning time in market:  8.252601016210985 bars
+	Best performance: 26.437399247716293% -> sl: 6, tpr: 1.2, bars_in_market: 17
+
+	number of losses: 130208
+	Average losing stop_loss:  3.3757833620054067 %
+	Average losing take_profit_ratio:  2.126817860654135
+	Average losing time in market:  7.156465040550504 bars
+	Worst performance: -15.686274509803921% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1day for MSFT. max_bars: 50
+	number of wins: 18430
+	Average winning stop_loss:  5.605968529571351 %
+	Average winning take_profit_ratio:  1.0770048833421828
+	Average winning time in market:  15.860173629951166 bars
+	Best performance: 51.01148168398033% -> sl: 1, tpr: 1.5, bars_in_market: 47
+
+	number of losses: 189417
+	Average losing stop_loss:  4.11754488773447 %
+	Average losing take_profit_ratio:  2.137485547759006
+	Average losing time in market:  14.813939614712513 bars
+	Worst performance: -15.719574781371074% -> sl: 10, tpr: 1.05, bars_in_market: 31
+
+
+
+Calculating outcomes of 1day for MSFT. max_bars: 60
+	number of wins: 19123
+	Average winning stop_loss:  5.686032526277258 %
+	Average winning take_profit_ratio:  1.0779924698005432
+	Average winning time in market:  17.43983684568321 bars
+	Best performance: 51.01148168398033% -> sl: 1, tpr: 1.5, bars_in_market: 47
+
+	number of losses: 199664
+	Average losing stop_loss:  4.221301787002163 %
+	Average losing take_profit_ratio:  2.1419432145997175
+	Average losing time in market:  16.845981248497477 bars
+	Worst performance: -15.719574781371074% -> sl: 10, tpr: 1.05, bars_in_market: 31
+
+
+
+Calculating outcomes of 1day for MSFT. max_bars: 70
+	number of wins: 19621
+	Average winning stop_loss:  5.7327353345904895 %
+	Average winning take_profit_ratio:  1.0792110493856288
+	Average winning time in market:  18.725294327506244 bars
+	Best performance: 51.01148168398033% -> sl: 1, tpr: 1.5, bars_in_market: 47
+
+	number of losses: 207438
+	Average losing stop_loss:  4.3001041274983365 %
+	Average losing take_profit_ratio:  2.1466426112853907
+	Average losing time in market:  18.68392965609001 bars
+	Worst performance: -15.97412593812923% -> sl: 10, tpr: 1.1, bars_in_market: 69
+
+
+
+Calculating outcomes of 1day for MSFT. max_bars: 100
+	number of wins: 20818
+	Average winning stop_loss:  5.81271015467384 %
+	Average winning take_profit_ratio:  1.0855053319240497
+	Average winning time in market:  22.62705351138438 bars
+	Best performance: 56.55478150728309% -> sl: 1, tpr: 1.5, bars_in_market: 89
+
+	number of losses: 221553
+	Average losing stop_loss:  4.491981602596218 %
+	Average losing take_profit_ratio:  2.156572242306747
+	Average losing time in market:  23.05588730461786 bars
+	Worst performance: -15.97412593812923% -> sl: 10, tpr: 1.1, bars_in_market: 69
+
+
+
+
+
+
+
+Calculating outcomes of 1min for MSFT. max_bars: 5
+	number of wins: 112
+	Average winning stop_loss:  4.875 %
+	Average winning take_profit_ratio:  1.049999999999998
+	Average winning time in market:  1.8571428571428572 bars
+	Best performance: 8.614264667648841% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 3269
+	Average losing stop_loss:  1.3897216274089936 %
+	Average losing take_profit_ratio:  2.1214285714285874
+	Average losing time in market:  2.2569593147751608 bars
+	Worst performance: -6.82513651963685% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+
+
+Calculating outcomes of 1min for MSFT. max_bars: 10
+	number of wins: 200
+	Average winning stop_loss:  4.875 %
+	Average winning take_profit_ratio:  1.0500000000000034
+	Average winning time in market:  4.12 bars
+	Best performance: 8.614264667648841% -> sl: 1, tpr: 1.05, bars_in_market: 0
+
+	number of losses: 8204
+	Average losing stop_loss:  1.3421501706484642 %
+	Average losing take_profit_ratio:  2.121428571428594
+	Average losing time in market:  5.156996587030717 bars
+	Worst performance: -6.842457973037789% -> sl: 1, tpr: 1.05, bars_in_market: 9
+
+
+
+Calculating outcomes of 1min for MSFT. max_bars: 20
+	number of wins: 382
+	Average winning stop_loss:  4.895287958115183 %
+	Average winning take_profit_ratio:  1.0500000000000071
+	Average winning time in market:  9.06020942408377 bars
+	Best performance: 8.666059739021117% -> sl: 1, tpr: 1.05, bars_in_market: 10
+
+	number of losses: 21798
+	Average losing stop_loss:  1.308606294155427 %
+	Average losing take_profit_ratio:  2.12142857142845
+	Average losing time in market:  11.127488760436737 bars
+	Worst performance: -6.842457973037789% -> sl: 1, tpr: 1.05, bars_in_market: 9
+
+
+
+Calculating outcomes of 1min for MSFT. max_bars: 50
+	number of wins: 1001
+	Average winning stop_loss:  4.9020979020979025 %
+	Average winning take_profit_ratio:  1.0499999999999807
+	Average winning time in market:  25.55944055944056 bars
+	Best performance: 8.666059739021117% -> sl: 1, tpr: 1.05, bars_in_market: 10
+
+	number of losses: 74067
+	Average losing stop_loss:  1.3172667989793025 %
+	Average losing take_profit_ratio:  2.1214285714289947
+	Average losing time in market:  28.14762309800586 bars
+	Worst performance: -6.842457973037789% -> sl: 1, tpr: 1.05, bars_in_market: 9
+
+
+
+Calculating outcomes of 1min for MSFT. max_bars: 60
+	number of wins: 1262
+	Average winning stop_loss:  4.905705229793978 %
+	Average winning take_profit_ratio:  1.0499999999999752
+	Average winning time in market:  31.571315372424724 bars
+	Best performance: 8.666059739021117% -> sl: 1, tpr: 1.05, bars_in_market: 10
+
+	number of losses: 94871
+	Average losing stop_loss:  1.3214786394156275 %
+	Average losing take_profit_ratio:  2.1214285714290844
+	Average losing time in market:  33.939423005976536 bars
+	Worst performance: -6.842457973037789% -> sl: 1, tpr: 1.05, bars_in_market: 9
+
+
+
+Calculating outcomes of 1min for MSFT. max_bars: 70
+	number of wins: 1489
+	Average winning stop_loss:  4.932840832773674 %
+	Average winning take_profit_ratio:  1.049999999999972
+	Average winning time in market:  36.58428475486904 bars
+	Best performance: 8.666059739021117% -> sl: 1, tpr: 1.05, bars_in_market: 10
+
+	number of losses: 116732
+	Average losing stop_loss:  1.3254977212760854 %
+	Average losing take_profit_ratio:  2.121428571429144
+	Average losing time in market:  39.67522187574958 bars
+	Worst performance: -6.94313116304201% -> sl: 2, tpr: 1.05, bars_in_market: 65
+
+
+
+Calculating outcomes of 1min for MSFT. max_bars: 100
+	number of wins: 2423
+	Average winning stop_loss:  4.9917457697069745 %
+	Average winning take_profit_ratio:  1.0500000000000096
+	Average winning time in market:  55.886091621956254 bars
+	Best performance: 8.666059739021117% -> sl: 1, tpr: 1.05, bars_in_market: 10
+
+	number of losses: 184107
+	Average losing stop_loss:  1.3378198547583742 %
+	Average losing take_profit_ratio:  2.1214285714278716
+	Average losing time in market:  56.094977377286035 bars
+	Worst performance: -7.004122414513972% -> sl: 2, tpr: 1.05, bars_in_market: 99
+
+
+
+
+
+
+
