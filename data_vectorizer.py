@@ -44,15 +44,19 @@ def create_final_vector(df, for_training=True):
 
 
 def create_training():
-    all_tickers = h.get_tickers()
+    all_tickers = data_api.get_actionable_stocks_list()
     all_intervals = h.get_intervals()
 
-    for ticker in all_tickers:
-        for interval in all_intervals:
-            df = pd.read_csv(fc.get_ticker_file(ticker, interval), index_col=0)
-            new_df = create_final_vector(df)
-            new_df.to_csv(h.get_previous_combined(ticker, interval))
-    return new_df
+    Parallel(n_jobs=4)(
+        delayed(create_data_vector)(ticker, interval) for ticker in all_tickers for interval in all_intervals
+    )
+
+
+def create_data_vector(ticker, interval):
+    print(f"Creating data vector for {ticker} at {interval}")
+    df = pd.read_csv(h.get_ticker_file(ticker, interval), index_col=0)
+    new_df = create_final_vector(df)
+    new_df.to_csv(h.get_previous_combined(ticker, interval))
 
 
 def scale_all_data():
@@ -87,7 +91,7 @@ def scale_all_data():
     print("Done scaling data.")
 
     print("Storing the scaler model...")
-    dump(h.get_new_scaler())
+    dump(model, h.get_new_scaler())
     print("Done storing the scaler model.")
 
     print("Finished.")
