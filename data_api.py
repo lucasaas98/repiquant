@@ -1,8 +1,12 @@
 # Standard Library
+import json
 import os
 
 # Third party dependencies
 from twelvedata import TDClient
+
+# Current project dependencies
+import helper as h
 
 client = None
 api_key = os.getenv("TWELVEDATA_API_KEY")
@@ -16,16 +20,7 @@ def create_client():
     return client
 
 
-def get_client():
-    global client
-    if not client:
-        create_client()
-    return client
-
-
 def get_time_series(symbol="AAPL", interval="1min", outputsize=10, start_date=None, end_date=None):
-    global client
-
     client = create_client()
 
     if start_date and end_date:
@@ -52,21 +47,23 @@ def get_time_series(symbol="AAPL", interval="1min", outputsize=10, start_date=No
     return ts.as_pandas()
 
 
-def get_stocks_list(country="USA"):
-    global client
+def get_stocks_list(country="USA", from_file=False):
+    if not from_file:
+        client = create_client()
 
-    client = get_client()
+        stocks_list = client.get_stocks_list(country=country).as_json()
 
-    stocks_list = client.get_stocks_list(country=country, exchange="NASDAQ").as_json()
-    # Standard Library
-    import json
+        json.dump(stocks_list, open("stocks.json", "w"))
 
-    json.dump(stocks_list, open("stocks.json", "w"))
+        tickers = [stock["symbol"] for stock in stocks_list]
 
-    tickers = [stock["symbol"] for stock in stocks_list]
+        return tickers
+    else:
+        return [stock["symbol"] for stock in json.load(open("assorted/stocks.json", "r"))]
 
-    return tickers
-    # return ["TSLA", "AAPL", "MSFT", "GOOG", "AMZN"]
+
+def get_actionable_stocks_list():
+    return [symbol for symbol in get_stocks_list(from_file=True) if symbol in h.get_reasonable_tickers()]
 
 
 if __name__ == "__main__":

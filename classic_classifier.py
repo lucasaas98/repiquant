@@ -50,7 +50,6 @@ def train_classifier():
             "classifier": [RandomForestClassifier()],
             "classifier__n_estimators": list(range(10, 101, 10)),
             "classifier__max_features": list(range(6, 32, 5)),
-            "classifier__max_iter": list(range(50, 500, 100)),
         },
     ]
     clf = GridSearchCV(pipe, param_grid=param_grid, cv=5, verbose=True, n_jobs=-1)

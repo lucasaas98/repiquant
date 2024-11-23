@@ -6,6 +6,7 @@ import pandas as pd
 from joblib import Parallel, delayed
 
 # Current project dependencies
+import data_api
 import engine
 import helper as h
 
@@ -143,7 +144,7 @@ def for_loop_trade_results(results, ticker, interval):
 
 
 def calculate_all_trade_outcomes_to_dataframe():
-    all_tickers = h.get_tickers()
+    all_tickers = data_api.get_actionable_stocks_list()
     all_intervals = h.get_intervals()
 
     Parallel(n_jobs=4)(

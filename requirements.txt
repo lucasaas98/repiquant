@@ -9,5 +9,5 @@ numpy
 pandas
 matplotlib
 scikit-learn
-vectorbt
+backtrader
 joblib

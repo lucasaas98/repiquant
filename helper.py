@@ -8,13 +8,55 @@ import file_combiner as fc
 RAW_DATA_FOLDER = "raw_data"
 PROCESSED_DATA_FOLDER = "processed_data"
 MODELS_FOLDER = "models"
+DEFAULT_TICKERS = ["TSLA", "AAPL", "MSFT", "GOOG", "AMZN"]
+DEFAULT_INTERVALS = ["5min", "1day", "1min", "1h"]
 
 
 def get_tickers(from_folder=False):
     if from_folder:
         return os.listdir(RAW_DATA_FOLDER)
     else:
-        return ["TSLA", "AAPL", "MSFT", "GOOG", "AMZN"]
+        return DEFAULT_TICKERS
+
+
+def get_reasonable_tickers():
+    # we are not able to work with all the tickers we currently have in TwelveData for the US. Too many tickers.
+    # let's instead decide on a number of nice tickers - we are getting the tickers based on market cap
+    default_tickers = DEFAULT_TICKERS
+    valuable_tickers = [
+        "NVDA",
+        "META",
+        "AVGO",
+        "COST",
+        "NFLX",
+        "LLY",
+        "WMT",
+        "JPM",
+        "V",
+        "UNH",
+        "XOM",
+        "ORCL",
+        "MA",
+        "HD",
+        "PG",
+        "JNJ",
+        "BAC",
+        "CRM",
+        "ABBV",
+        "CVX",
+        "TMUS",
+        "KO",
+        "MRK",
+        "WFC",
+        "CSCO",
+        "AMD",
+        "ADBE",
+        "PEP",
+        "MS",
+        "DIS",
+    ]
+
+    return default_tickers + valuable_tickers
 
 
 def get_intervals(from_folder=False):
@@ -22,7 +64,7 @@ def get_intervals(from_folder=False):
         ticker = "TSLA"
         return os.listdir(f"{RAW_DATA_FOLDER}/{ticker}")
     else:
-        return ["5min", "1day", "1min", "1h"]
+        return DEFAULT_INTERVALS
 
 
 def get_latest_scaler():
@@ -35,7 +77,7 @@ def get_specific_scaler(timestamp):
 
 
 def ignore_files_list():
-    return ["all_current.csv", "trade_outcomes.csv"]
+    return ["all_current.csv", "trade_outcomes.csv", "less_than_2_years", "fucked_in_the_api"]
 
 
 def get_ticker_file(ticker, interval):

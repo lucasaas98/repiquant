@@ -6,6 +6,7 @@ import re
 import pandas as pd
 
 # Current project dependencies
+import data_api
 import helper as h
 
 
@@ -35,8 +36,14 @@ def combine_ticker_files(ticker, interval):
     full_dataframe.to_csv(h.get_ticker_file(ticker, interval))
 
 
-def combine_all_tickers():
-    for ticker in h.get_tickers(from_folder=True):
+def combine_all_tickers(from_data_api=False):
+    tickers = None
+    if from_data_api is True:
+        tickers = data_api.get_actionable_stocks_list()
+    else:
+        tickers = h.get_tickers(from_folder=True)
+
+    for ticker in tickers:
         print(f"Combining {ticker}")
         for interval in h.get_intervals(from_folder=True):
             try:

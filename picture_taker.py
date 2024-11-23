@@ -41,14 +41,25 @@ def get_extremes_timestamps(dataframe):
 
 
 def get_all_data():
+    all_intervals = h.get_intervals()
+    all_tickers = data_api.get_actionable_stocks_list()
+    all_item_count = len(all_intervals) * len(all_tickers)
+
+    count = 0
+
     for interval in h.get_intervals():
         print(f"Fetching data for bar size: {interval}")
-        for ticker in data_api.get_stocks_list():
+        for ticker in data_api.get_actionable_stocks_list():
             print(f"{ticker}")
             flag = True
             if not os.path.exists(f"raw_data/{ticker}/{interval}"):
                 print("\tFirst run! Creating folder!")
                 os.makedirs(f"raw_data/{ticker}/{interval}")
+            if os.path.exists(f"raw_data/{ticker}/{interval}/less_than_2_years") or os.path.exists(
+                f"raw_data/{ticker}/{interval}/fucked_in_the_api"
+            ):
+                flag = False
+
             min_timestamp = get_min_timestamp(ticker, interval)
             while min_timestamp > (time.time() - 86400 * 730) and flag:
                 try:
@@ -69,22 +80,35 @@ def get_all_data():
                     print(e)
                     if "greater value than the number of historical data points" in str(e):
                         print("\tIt's less than 2 years old.")
+                        open(f"raw_data/{ticker}/{interval}/less_than_2_years", "a").close()
                         flag = False
                     elif "Data not found" in str(e):
                         print("\tIt's fucked in the API.")
+                        open(f"raw_data/{ticker}/{interval}/fucked_in_the_api", "a").close()
                         flag = False
                     else:
                         print("\t\texited")
                         exit()
                 finally:
-                    print("Sleeping to avoid rate limiting")
-                    time.sleep(62)
+                    print("Sleeping 12s to avoid rate limiting")
+                    time.sleep(12)
             print("\tWe already fetched all the data for the ticker!")
+            count += 1
+
+    if count == all_item_count:
+        return False
+    else:
+        return True
+
+
+def take_picture():
+    flag = True
+    while flag:
+        try:
+            flag = get_all_data()
+        except Exception as e:
+            print("Error: ", e)
 
 
 if __name__ == "__main__":
-    while True:
-        try:
-            get_all_data()
-        except Exception as e:
-            print("Error: ", e)
+    take_picture()

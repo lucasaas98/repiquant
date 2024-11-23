@@ -57,7 +57,7 @@ def create_training():
 
 def scale_all_data():
     print("Scaling data...")
-    all_tickers = h.get_tickers()
+    all_tickers = data_api.get_actionable_stocks_list()
     all_intervals = h.get_intervals()
 
     scaler = MinMaxScaler(feature_range=(-1, 1))
@@ -101,7 +101,7 @@ def scale_one(df):
 
 
 def create_labels_for_all_bars():
-    all_tickers = h.get_tickers()
+    all_tickers = data_api.get_actionable_stocks_list()
     all_intervals = h.get_intervals()
 
     print("Creating labels for bars...")
