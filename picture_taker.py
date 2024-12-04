@@ -90,8 +90,8 @@ def get_all_data():
                         print("\t\texited")
                         exit()
                 finally:
-                    print("Sleeping 12s to avoid rate limiting")
-                    time.sleep(12)
+                    print("Sleeping 2.5s to avoid rate limiting")
+                    time.sleep(2.5)
             print("\tWe already fetched all the data for the ticker!")
             count += 1
 

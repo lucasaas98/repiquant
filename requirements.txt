@@ -11,3 +11,5 @@ matplotlib
 scikit-learn
 backtrader
 joblib
+tensorflow
+keras

@@ -66,16 +66,17 @@ def scale_all_data():
 
     scaler = MinMaxScaler(feature_range=(-1, 1))
 
-    print("Creating the scaler and fitting data.")
-    counter = 0
-    for ticker in all_tickers:
-        for interval in all_intervals:
-            df = pd.read_csv(h.get_previous_combined(ticker, interval), index_col=0)
-            numpy_array = df.to_numpy()
-            model = scaler.fit(numpy_array)
-            counter += 1
-            print(f"Fitted {counter} of {len(all_tickers)*len(all_intervals)}")
-    print("Done fitting data.")
+    # print("Creating the scaler and fitting data.")
+    # counter = 0
+    # for ticker in all_tickers:
+    #     for interval in all_intervals:
+    #         df = pd.read_csv(h.get_previous_combined(ticker, interval), index_col=0)
+    #         numpy_array = df.to_numpy()
+    #         model = scaler.fit(numpy_array)
+    #         counter += 1
+    #         print(f"Fitted {counter} of {len(all_tickers)*len(all_intervals)}")
+    # print("Done fitting data.")
+    model = load("models/scalers/1732994464_scaler.gzip")
 
     print("Transforming the data...")
     counter = 0
@@ -90,9 +91,9 @@ def scale_all_data():
             print(f"Scaled {counter} of {len(all_tickers)*len(all_intervals)}")
     print("Done scaling data.")
 
-    print("Storing the scaler model...")
-    dump(model, h.get_new_scaler())
-    print("Done storing the scaler model.")
+    # print("Storing the scaler model...")
+    # dump(model, h.get_new_scaler())
+    # print("Done storing the scaler model.")
 
     print("Finished.")
 
@@ -113,6 +114,21 @@ def create_labels_for_all_bars():
     Parallel(n_jobs=4)(
         delayed(create_labels_for_each_bar)(ticker, interval) for ticker in all_tickers for interval in all_intervals
     )
+
+
+def label_return(return_pct):
+    if return_pct > 5:
+        return "very good"
+    elif return_pct > 3:
+        return "good"
+    elif return_pct > 1:
+        return "ok"
+    elif return_pct < 1 and return_pct > -1:
+        return "noop"
+    elif return_pct <= -1 and return_pct > -3:
+        return "bad"
+    elif return_pct <= -3:
+        return "very bad"
 
 
 def create_labels_for_each_bar(ticker, interval):
@@ -144,7 +160,7 @@ def create_labels_for_each_bar(ticker, interval):
         avg_takeprofit = sum(take_profits) / len(take_profits)
 
         labels[name[3]] = (
-            "bad" if avg_return_pct < 0 else "good",
+            label_return(avg_return_pct),
             avg_stoploss,
             avg_bars_in_market,
             avg_takeprofit,

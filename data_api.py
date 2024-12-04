@@ -53,7 +53,7 @@ def get_stocks_list(country="USA", from_file=False):
 
         stocks_list = client.get_stocks_list(country=country).as_json()
 
-        json.dump(stocks_list, open("stocks.json", "w"))
+        json.dump(stocks_list, open("assorted/stocks.json", "w"))
 
         tickers = [stock["symbol"] for stock in stocks_list]
 
@@ -64,6 +64,9 @@ def get_stocks_list(country="USA", from_file=False):
 
 def get_actionable_stocks_list():
     return [symbol for symbol in get_stocks_list(from_file=True) if symbol in h.get_reasonable_tickers()]
+    # ["SCHW", "PFE", "INTC"]
+    # ["ACHR", "AIR", "BAM", "BRN", "CNM"]
+    # 
 
 
 if __name__ == "__main__":

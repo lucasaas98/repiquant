@@ -2,9 +2,6 @@
 import os
 from time import time
 
-# Current project dependencies
-import file_combiner as fc
-
 RAW_DATA_FOLDER = "raw_data"
 PROCESSED_DATA_FOLDER = "processed_data"
 MODELS_FOLDER = "models"
@@ -110,3 +107,7 @@ def get_scaled_previous_combined(ticker, interval):
 
 def get_new_scaler():
     return os.path.join(MODELS_FOLDER, "scalers", f"{int(time())}_scaler.gzip")
+
+
+def get_new_classifier():
+    return os.path.join(MODELS_FOLDER, "classifiers", f"{int(time())}_classifier(SVC).gzip")

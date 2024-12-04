@@ -158,7 +158,7 @@ def calculate_trade_outcomes_to_dataframe(ticker, interval):
     if not os.path.exists(f"processed_data/{ticker}/{interval}"):
         os.makedirs(f"processed_data/{ticker}/{interval}")
 
-    for max_number_of_bars in [5, 10, 20, 50, 60, 70, 100]:
+    for max_number_of_bars in [50]:
         print(f"Calculating outcomes of {interval} for {ticker}. max_bars: {max_number_of_bars}")
         results = []
 

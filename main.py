@@ -1,4 +1,6 @@
 # Current project dependencies
+import classic_classifier as cc
+import cnn_classifier as cnc
 import data_vectorizer as dv
 import file_combiner as fc
 import picture_taker as pt
@@ -13,6 +15,8 @@ def main():
     print("\t4. Create Data Vectors")
     print("\t5. Scale data")
     print("\t6. Create training data")
+    print("\t7. Train (interval:5min)")
+    print("\t8. Train CNN (interval:5min)")
     print("\t0. Exit")
 
     choice = int(input("\nEnter your choice: "))
@@ -27,7 +31,7 @@ def main():
         print("\tDone.")
     elif choice == 3:
         print("Calculating trade outcomes...")
-        tdc.calculate_all_trade_outcomnces_to_dataframe()
+        tdc.calculate_all_trade_outcomes_to_dataframe()
         print("\tDone.")
     elif choice == 4:
         print("Creating data vectors...")
@@ -40,6 +44,14 @@ def main():
     elif choice == 6:
         print("Creating training data...")
         dv.create_labels_for_all_bars()
+        print("\tDone.")
+    elif choice == 7:
+        print("Start training...")
+        cc.train_classifier()
+        print("\tDone.")
+    elif choice == 8:
+        print("Start training...")
+        cnc.train()
         print("\tDone.")
     elif choice == 0:
         return False

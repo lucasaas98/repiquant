@@ -33,6 +33,7 @@ def combine_ticker_files(ticker, interval):
         for file in sorted(h.get_ticker_files(ticker, interval), reverse=True)
     ]
     full_dataframe = pd.concat(dataframes).reset_index().set_index("datetime")[::-1]
+    full_dataframe = full_dataframe[~full_dataframe.index.duplicated(keep="first")]
     full_dataframe.to_csv(h.get_ticker_file(ticker, interval))
 
 
