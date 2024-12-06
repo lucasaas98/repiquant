@@ -13,3 +13,4 @@ backtrader
 joblib
 tensorflow
 keras
+python-dotenv

@@ -39,7 +39,8 @@ class PaperTrader:
     def log(self, txt, notify=False):
         dt = datetime.now()
         print("%d - %s, %s" % (self.current_bar, dt.isoformat(), txt))
-        notify_trade(txt)
+        if notify:
+            notify_trade(txt)
 
     def load_models(self):
         self.model = keras.models.load_model("models/classifiers/1733351489_model_5min_more_classes.keras")
@@ -125,3 +126,12 @@ class PaperTrader:
             self.print_bar_result()
             self.log("Sleeping 5 mins")
             sleep(300)
+
+
+if __name__ == "__main__":
+    # Third party dependencies
+    from dotenv import load_dotenv
+
+    load_dotenv()
+    paper_trader = PaperTrader()
+    paper_trader.run()

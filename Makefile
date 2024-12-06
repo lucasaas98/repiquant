@@ -12,3 +12,14 @@ run:
 format:
 	echo "Running black, isort and flake8"
 	source .venv/bin/activate && black . && isort . && flake8 .
+
+build:
+	echo "Building docker image and removing orphans!"
+	docker compose build
+
+deploy:
+	echo "Removing previous container!"
+	docker compose down --remove-orphans
+	$(MAKE) build
+	echo "Starting container..."
+	docker compose up -d
