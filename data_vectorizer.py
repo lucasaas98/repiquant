@@ -64,7 +64,7 @@ def scale_all_data():
     all_tickers = data_api.get_actionable_stocks_list()
     all_intervals = h.get_intervals()
 
-    scaler = MinMaxScaler(feature_range=(-1, 1))
+    # scaler = MinMaxScaler(feature_range=(-1, 1))
 
     # print("Creating the scaler and fitting data.")
     # counter = 0
@@ -119,16 +119,18 @@ def create_labels_for_all_bars():
 def label_return(return_pct):
     if return_pct > 5:
         return "very good"
-    elif return_pct > 3:
+    elif return_pct > 2:
         return "good"
-    elif return_pct > 1:
-        return "ok"
-    elif return_pct < 1 and return_pct > -1:
+    else:
         return "noop"
-    elif return_pct <= -1 and return_pct > -3:
-        return "bad"
-    elif return_pct <= -3:
-        return "very bad"
+    # elif return_pct > 1:
+    #     return "ok"
+    # elif return_pct < 1 and return_pct > -1:
+    #     return "noop"
+    # elif return_pct <= -1 and return_pct > -3:
+    #     return "bad"
+    # elif return_pct <= -3:
+    #     return "very bad"
 
 
 def create_labels_for_each_bar(ticker, interval):
@@ -157,10 +159,12 @@ def create_labels_for_each_bar(ticker, interval):
         avg_return_pct = sum(return_pcts) / len(return_pcts)
         avg_stoploss = sum(stoplosses) / len(stoplosses)
         avg_bars_in_market = sum(bars_in_market) / len(bars_in_market)
+        # max_bars_in_market = max(bars_in_market)
         avg_takeprofit = sum(take_profits) / len(take_profits)
 
         labels[name[3]] = (
             label_return(avg_return_pct),
+            avg_return_pct,
             avg_stoploss,
             avg_bars_in_market,
             avg_takeprofit,
@@ -173,14 +177,32 @@ def create_labels_for_each_bar(ticker, interval):
         if x["datetime"] in labels.keys():
             return labels[x["datetime"]]
         else:
-            return ("noop", 0, 0, 0)
+            return ("noop", 0, 0, 0, 0)
 
     scaled_data["label"] = scaled_data.apply(lambda x: label_function(x)[0], axis=1)
-    scaled_data["avg_stoploss"] = scaled_data.apply(lambda x: label_function(x)[1], axis=1)
-    scaled_data["avg_bars_in_market"] = scaled_data.apply(lambda x: label_function(x)[2], axis=1)
-    scaled_data["avg_takeprofit"] = scaled_data.apply(lambda x: label_function(x)[3], axis=1)
+    scaled_data["avg_return_pct"] = scaled_data.apply(lambda x: label_function(x)[1], axis=1)
+    scaled_data["avg_stoploss"] = scaled_data.apply(lambda x: label_function(x)[2], axis=1)
+    scaled_data["avg_bars_in_market"] = scaled_data.apply(lambda x: label_function(x)[3], axis=1)
+    scaled_data["avg_takeprofit"] = scaled_data.apply(lambda x: label_function(x)[4], axis=1)
 
-    scaled_data.to_csv(h.get_scaled_labeled(ticker, interval, max_number_of_bars), index=False)
+    # def count_consecutive_returns(scaled_data):
+    #     mask = scaled_data["avg_return_pct"] > 5
+    #     return np.where(
+    #         mask.shift(1), scaled_data.loc[mask, "consecutive_return_pct"].iloc[1:], np.where(mask.iloc[0], [1], [0])
+    #     )
+
+    # # Apply this function to your DataFrame
+    # scaled_data["consecutive_return_pct"] = 0
+    # mask = (scaled_data["avg_return_pct"] > 5) & (scaled_data["consecutive_return_pct"] == 0)
+    # scaled_data.loc[mask, "consecutive_return_pct"] = 1
+
+    # for i in range(2, len(scaled_data)):
+    #     if scaled_data.iloc[i - 1]["avg_return_pct"] <= 5:
+    #         scaled_data.at[scaled_data.iloc[i - 1].name, "consecutive_return_pct"] = 0
+    #     else:
+    #         scaled_data.loc[mask, "consecutive_return_pct"] = count_consecutive_returns(scaled_data)
+
+    scaled_data.to_csv(h.get_scaled_labeled(ticker, interval, max_bar=50), index=False)
 
     print(f"{ticker} {interval} done!")
 

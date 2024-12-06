@@ -2,11 +2,39 @@
 import os
 from time import time
 
+# Third party dependencies
+import pandas as pd
+
 RAW_DATA_FOLDER = "raw_data"
 PROCESSED_DATA_FOLDER = "processed_data"
 MODELS_FOLDER = "models"
 DEFAULT_TICKERS = ["TSLA", "AAPL", "MSFT", "GOOG", "AMZN"]
 DEFAULT_INTERVALS = ["5min", "1day", "1min", "1h"]
+
+
+class DataTranslator:
+    def __init__(self, ticker, interval):
+        self.hloc_data = None
+        self.increments_data = None
+        self.ticker = ticker
+        self.interval = interval
+        self.increments_data_file = get_scaled_previous_combined(ticker, interval)
+        self.hloc_data_file = get_ticker_file(ticker, interval)
+        self.load_data()
+
+    def load_data(self):
+        self.hloc_data = pd.read_csv(self.hloc_data_file, index_col=0)
+        self.increments_data = pd.read_csv(self.increments_data_file, index_col=0)
+
+    def get_increments_for_bar(self, timestamp):
+        real_index = timestamp.strftime("%Y-%m-%d %H:%M:%S")
+        if real_index in self.increments_data.index.to_list():
+            return self.increments_data.loc[real_index]
+
+    def get_close_for_bar(self, timestamp):
+        real_index = timestamp.strftime("%Y-%m-%d %H:%M:%S")
+        if real_index in self.hloc_data.index.to_list():
+            return self.hloc_data.loc[real_index]
 
 
 def get_tickers(from_folder=False):

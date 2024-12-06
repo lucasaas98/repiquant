@@ -64,9 +64,11 @@ def get_stocks_list(country="USA", from_file=False):
 
 def get_actionable_stocks_list():
     return [symbol for symbol in get_stocks_list(from_file=True) if symbol in h.get_reasonable_tickers()]
+    # ["QCOM"]
+    #
     # ["SCHW", "PFE", "INTC"]
     # ["ACHR", "AIR", "BAM", "BRN", "CNM"]
-    # 
+    #
 
 
 if __name__ == "__main__":

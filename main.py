@@ -1,8 +1,13 @@
+# Third party dependencies
+from dotenv import load_dotenv
+
 # Current project dependencies
 import classic_classifier as cc
 import cnn_classifier as cnc
 import data_vectorizer as dv
 import file_combiner as fc
+import notifier as notif
+import paper_life_simulator as pls
 import picture_taker as pt
 import training_data_cooker as tdc
 
@@ -17,6 +22,7 @@ def main():
     print("\t6. Create training data")
     print("\t7. Train (interval:5min)")
     print("\t8. Train CNN (interval:5min)")
+    print("\t9. Run Bot (paper trading)")
     print("\t0. Exit")
 
     choice = int(input("\nEnter your choice: "))
@@ -53,6 +59,13 @@ def main():
         print("Start training...")
         cnc.train()
         print("\tDone.")
+    elif choice == 9:
+        print("Start paper trading...")
+        load_dotenv()
+        print(notif.notify_trade())
+        # paper_trader = pls.PaperTrader()
+        # paper_trader.run()
+        print("Stopped paper trading.")
     elif choice == 0:
         return False
     else:

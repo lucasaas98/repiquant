@@ -26,21 +26,19 @@ def load_data():
         scaled_labeled_50_bars = pd.read_csv(h.get_scaled_labeled(ticker, interval), index_col=0)
 
         scaled_labeled_50_bars = scaled_labeled_50_bars.drop(
-            ["avg_stoploss", "avg_bars_in_market", "avg_takeprofit"], axis=1
+            ["avg_stoploss", "avg_bars_in_market", "avg_takeprofit", "avg_return_pct"], axis=1
         )
         all_data.append(scaled_labeled_50_bars)
 
     # Concatenate all dataframes into one dataframe
     return pd.concat(all_data)
 
+
 def split_data(train_data):
     # standardize the labels for the 3 classes
-    train_data.loc[train_data["label"] == "very good", "label"] = 5
-    train_data.loc[train_data["label"] == "good", "label"] = 4
-    train_data.loc[train_data["label"] == "ok", "label"] = 3
-    train_data.loc[train_data["label"] == "noop", "label"] = 2
-    train_data.loc[train_data["label"] == "bad", "label"] = 1
-    train_data.loc[train_data["label"] == "very bad", "label"] = 0
+    train_data.loc[train_data["label"] == "very good", "label"] = 2
+    train_data.loc[train_data["label"] == "good", "label"] = 1
+    train_data.loc[train_data["label"] == "noop", "label"] = 0
 
     return train_test_split(
         train_data.drop("label", axis=1).to_numpy(dtype=np.float32),
@@ -81,7 +79,7 @@ def train():
     # Split the data into training and testing sets
     x_train, x_test, y_train, y_test = split_data(train_data)
 
-    classes = np.unique(np.concatenate((y_train, y_test), axis=0))
+    # classes = np.unique(np.concatenate((y_train, y_test), axis=0))
 
     x_train = x_train.reshape((x_train.shape[0], x_train.shape[1], 1))
     x_test = x_test.reshape((x_test.shape[0], x_test.shape[1], 1))
