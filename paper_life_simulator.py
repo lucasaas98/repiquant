@@ -13,7 +13,7 @@ from sklearn.preprocessing import MinMaxScaler
 # Current project dependencies
 import data_api as api
 import trading_api as alpaca
-from consts import INTERVAL, MULTIPLE_FEED_TICKERS
+from consts import INTERVAL, MULTIPLE_FEED_EXCHANGE, MULTIPLE_FEED_TICKERS
 from data_vectorizer import create_final_vector
 from notifier import notify_trade
 
@@ -103,13 +103,17 @@ class PaperTrader:
                 self.ticker_predictions[ticker] = (label, prediction, raw_data_df)
             best_ticker, best_label = self.get_best_ticker()
             if best_ticker:
-                best_ticker_close = self.ticker_predictions[best_ticker][3].to_numpy()[-1][3]
+                best_ticker_close = self.ticker_predictions[best_ticker][2].to_numpy()[-1][3]
             if best_label == "very good":
                 self.log(f"Found a {best_label} position with ticker {best_ticker}")
-                self.pending_order = alpaca.create_bracket_order(best_ticker, best_ticker_close, 5, 5, 2, self.balance)
+                self.pending_order = alpaca.create_bracket_order(
+                    best_ticker, best_ticker_close, 5, 5, 2, float(self.balance)
+                )
             elif best_label == "good":
                 self.log(f"Found a {best_label} position with ticker {best_ticker}")
-                self.pending_order = alpaca.create_bracket_order(best_ticker, best_ticker_close, 5, 2, 2, self.balance)
+                self.pending_order = alpaca.create_bracket_order(
+                    best_ticker, best_ticker_close, 5, 2, 2, float(self.balance)
+                )
 
     def print_bar_result(self):
         new_dict = dict()
@@ -118,13 +122,18 @@ class PaperTrader:
         self.log(json.dumps(new_dict))
 
     def run(self):
+        market_state = api.get_market_open(MULTIPLE_FEED_EXCHANGE)
+        market_open = market_state[0]["is_market_open"]
         while True:
-            self.current_bar += 1
-            self.log(f"Starting bar: {self.current_bar}")
-            self.pre_cycle()
-            self.cycle()
-            self.print_bar_result()
-            self.log("Sleeping 5 mins")
+            if market_open:
+                self.current_bar += 1
+                self.log(f"Starting bar: {self.current_bar}")
+                self.pre_cycle()
+                self.cycle()
+                self.print_bar_result()
+                self.log("Sleeping 5 mins")
+            else:
+                self.log("Market is closed! Sleeping 5 mins")
             sleep(300)
 
 

@@ -64,19 +64,18 @@ def scale_all_data():
     all_tickers = data_api.get_actionable_stocks_list()
     all_intervals = h.get_intervals()
 
-    # scaler = MinMaxScaler(feature_range=(-1, 1))
+    scaler = MinMaxScaler(feature_range=(-1, 1))
 
-    # print("Creating the scaler and fitting data.")
-    # counter = 0
-    # for ticker in all_tickers:
-    #     for interval in all_intervals:
-    #         df = pd.read_csv(h.get_previous_combined(ticker, interval), index_col=0)
-    #         numpy_array = df.to_numpy()
-    #         model = scaler.fit(numpy_array)
-    #         counter += 1
-    #         print(f"Fitted {counter} of {len(all_tickers)*len(all_intervals)}")
-    # print("Done fitting data.")
-    model = load("models/scalers/1732994464_scaler.gzip")
+    print("Creating the scaler and fitting data.")
+    counter = 0
+    for ticker in all_tickers:
+        for interval in all_intervals:
+            df = pd.read_csv(h.get_previous_combined(ticker, interval), index_col=0)
+            numpy_array = df.to_numpy()
+            model = scaler.fit(numpy_array)
+            counter += 1
+            print(f"Fitted {counter} of {len(all_tickers)*len(all_intervals)}")
+    print("Done fitting data.")
 
     print("Transforming the data...")
     counter = 0
@@ -91,11 +90,32 @@ def scale_all_data():
             print(f"Scaled {counter} of {len(all_tickers)*len(all_intervals)}")
     print("Done scaling data.")
 
-    # print("Storing the scaler model...")
-    # dump(model, h.get_new_scaler())
-    # print("Done storing the scaler model.")
+    print("Storing the scaler model...")
+    dump(model, h.get_new_scaler())
+    print("Done storing the scaler model.")
 
     print("Finished.")
+
+
+def scale_using_previous_scaler(scaler):
+    print("Scaling data...")
+    all_tickers = data_api.get_actionable_stocks_list()
+    all_intervals = h.get_intervals()
+
+    model = load("models/scalers/1732994464_scaler.gzip")
+
+    print("Scaling the data...")
+    counter = 0
+    for ticker in all_tickers:
+        for interval in all_intervals:
+            df = pd.read_csv(h.get_previous_combined(ticker, interval), index_col=0)
+            numpy_array = df.to_numpy()
+            scaled_data = model.transform(numpy_array)
+            scaled_df = pd.DataFrame(scaled_data, columns=df.columns, index=df.index)
+            scaled_df.to_csv(h.get_scaled_previous_combined(ticker, interval))
+            counter += 1
+            print(f"Scaled {counter} of {len(all_tickers)*len(all_intervals)}")
+    print("Done scaling data.")
 
 
 def scale_one(df):

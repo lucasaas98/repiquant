@@ -1,6 +1,9 @@
-# simulation vars
+# Standard Library
+import json
+import os
 
 TICKER = "INTC"
 INTERVAL = "5min"
 
-MULTIPLE_FEED_TICKERS = ["NVDA", "META", "MSFT", "TSLA", "AAPL", "CRM"]
+MULTIPLE_FEED_TICKERS = json.loads(os.getenv("TICKER_LIST"))
+MULTIPLE_FEED_EXCHANGE = os.getenv("EXCHANGE")

@@ -47,6 +47,12 @@ def get_time_series(symbol="AAPL", interval="1min", outputsize=10, start_date=No
     return ts.as_pandas()
 
 
+def get_market_open(exchange):
+    client = create_client()
+
+    return client.get_market_state(exchange=exchange).as_json()
+
+
 def get_stocks_list(country="USA", from_file=False):
     if not from_file:
         client = create_client()

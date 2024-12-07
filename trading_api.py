@@ -56,13 +56,13 @@ def create_bracket_order(symbol, close, position_size, take_profit_pct, stop_los
     take_profit_price = close * (1 + take_profit_pct / 100)
 
     bracket_order_data = MarketOrderRequest(
-        symbol="SPY",
+        symbol=symbol,
         qty=qty,
         side=OrderSide.BUY,
         time_in_force=TimeInForce.DAY,
         order_class=OrderClass.BRACKET,
-        take_profit=TakeProfitRequest(limit_price=take_profit_price),
-        stop_loss=StopLossRequest(stop_price=stop_loss_price),
+        take_profit=TakeProfitRequest(limit_price=round(take_profit_price, 2)),
+        stop_loss=StopLossRequest(stop_price=round(stop_loss_price, 2)),
     )
 
     bracket_order = trading_client.submit_order(order_data=bracket_order_data)

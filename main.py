@@ -1,10 +1,8 @@
-# Third party dependencies
-from dotenv import load_dotenv
-
 # Current project dependencies
 import classic_classifier as cc
 import cnn_classifier as cnc
 import data_vectorizer as dv
+import env
 import file_combiner as fc
 import notifier as notif
 import paper_life_simulator as pls
@@ -61,10 +59,8 @@ def main():
         print("\tDone.")
     elif choice == 9:
         print("Start paper trading...")
-        load_dotenv()
-        print(notif.notify_trade())
-        # paper_trader = pls.PaperTrader()
-        # paper_trader.run()
+        paper_trader = pls.PaperTrader()
+        paper_trader.run()
         print("Stopped paper trading.")
     elif choice == 0:
         return False

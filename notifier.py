@@ -8,10 +8,10 @@ import requests
 def notify_trade(message):
     gotify_url = os.getenv("GOTIFY_API_URL")
     app_token = os.getenv("GOTIFY_API_KEY")
-    ticker = message.split("--")[1]
+    splits = message.split("--")[1]
     files = {
-        "title": (None, f"{ticker} bought!"),
-        "message": (None, message),
+        "title": (None, f"{splits[1]} bought!"),
+        "message": (None, splits[2]),
         "priority": (None, "5"),
     }
 
