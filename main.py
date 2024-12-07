@@ -23,7 +23,8 @@ def main():
     print("\t9. Run Bot (paper trading)")
     print("\t0. Exit")
 
-    choice = int(input("\nEnter your choice: "))
+    choice = input("\nEnter your choice: ")
+    choice = int(choice) if choice != "" else 99
 
     if choice == 1:
         print("Downloading data...")
@@ -47,7 +48,7 @@ def main():
         print("\tDone.")
     elif choice == 6:
         print("Creating training data...")
-        dv.create_labels_for_all_bars()
+        dv.create_labels_for_all_bars(short=True)
         print("\tDone.")
     elif choice == 7:
         print("Start training...")
@@ -55,7 +56,7 @@ def main():
         print("\tDone.")
     elif choice == 8:
         print("Start training...")
-        cnc.train()
+        cnc.train(short=True)
         print("\tDone.")
     elif choice == 9:
         print("Start paper trading...")

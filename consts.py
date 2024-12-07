@@ -2,7 +2,7 @@
 import json
 import os
 
-TICKER = "INTC"
+TICKER = "TSLA"
 INTERVAL = "5min"
 
 MULTIPLE_FEED_TICKERS = json.loads(os.getenv("TICKER_LIST"))

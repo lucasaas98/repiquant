@@ -17,6 +17,7 @@ from strategies.cnn_strategy import CNNStrategy
 from strategies.more_classes_strategy import MoreClassesStrategy
 from strategies.multiple_feeds_strategy import MultipleFeedsStrategy
 from strategies.repi_strategy import RepiStrategy
+from strategies.short_and_long_strategy import ShortAndLongStrategy
 
 
 def run_multifeed_strategy(strategy):
@@ -77,6 +78,10 @@ def run_strategy(strategy):
     cerebro.broker.setcommission(commission=0.0005)
     cerebro.addsizer(bt.sizers.PercentSizer, percents=10)
 
+    cerebro.addanalyzer(btanalyzers.SharpeRatio, _name="sharpe")
+    cerebro.addanalyzer(btanalyzers.Returns, _name="returns")
+    cerebro.addanalyzer(btanalyzers.Transactions, _name="trans")
+
     # Print out the starting conditions
     print("Starting Portfolio Value: %.2f" % cerebro.broker.getvalue())
 
@@ -90,5 +95,5 @@ def run_strategy(strategy):
 
 
 if __name__ == "__main__":
-    strategy = MultipleFeedsStrategy
-    run_multifeed_strategy(strategy)
+    strategy = ShortAndLongStrategy
+    run_strategy(strategy)

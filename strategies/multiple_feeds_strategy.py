@@ -109,7 +109,6 @@ class MultipleFeedsStrategy(bt.Strategy):
             label = self.convert_prediction_to_label(np.array(prediction))
             # self.log(f"{ticker} - Prediction, {label}")
 
-            self.position_size = close
             if not self.position:
                 if label == "very good":
                     self.log(f"{ticker} - BUY CREATE, %.2f" % close)

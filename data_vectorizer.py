@@ -125,35 +125,38 @@ def scale_one(df):
     return pd.Dataframe(scaled_data, columns=df.columns, index=df.index)
 
 
-def create_labels_for_all_bars():
+def create_labels_for_all_bars(short=False):
     all_tickers = data_api.get_actionable_stocks_list()
     all_intervals = h.get_intervals()
 
     print("Creating labels for bars...")
 
     Parallel(n_jobs=4)(
-        delayed(create_labels_for_each_bar)(ticker, interval) for ticker in all_tickers for interval in all_intervals
+        delayed(create_labels_for_each_bar)(ticker, interval, short)
+        for ticker in all_tickers
+        for interval in all_intervals
     )
 
 
-def label_return(return_pct):
+def label_return_long(return_pct):
     if return_pct > 5:
         return "very good"
     elif return_pct > 2:
         return "good"
     else:
         return "noop"
-    # elif return_pct > 1:
-    #     return "ok"
-    # elif return_pct < 1 and return_pct > -1:
-    #     return "noop"
-    # elif return_pct <= -1 and return_pct > -3:
-    #     return "bad"
-    # elif return_pct <= -3:
-    #     return "very bad"
 
 
-def create_labels_for_each_bar(ticker, interval):
+def label_return_short(return_pct):
+    if return_pct < -5:
+        return "very bad"
+    elif return_pct < -2:
+        return "bad"
+    else:
+        return "noop"
+
+
+def create_labels_for_each_bar(ticker, interval, short=False):
     max_number_of_bars = 50
 
     print(f"{ticker} {interval} starting...")
@@ -163,6 +166,8 @@ def create_labels_for_each_bar(ticker, interval):
     grouped_trade_outcomes = trade_outcomes.groupby(["ticker", "interval", "max_bar", "datetime"])
 
     labels = {}
+
+    label_returner = label_return_short if short else label_return_long
 
     for name, group in grouped_trade_outcomes:
         return_pcts = list()
@@ -183,7 +188,7 @@ def create_labels_for_each_bar(ticker, interval):
         avg_takeprofit = sum(take_profits) / len(take_profits)
 
         labels[name[3]] = (
-            label_return(avg_return_pct),
+            label_returner(avg_return_pct),
             avg_return_pct,
             avg_stoploss,
             avg_bars_in_market,
@@ -205,24 +210,7 @@ def create_labels_for_each_bar(ticker, interval):
     scaled_data["avg_bars_in_market"] = scaled_data.apply(lambda x: label_function(x)[3], axis=1)
     scaled_data["avg_takeprofit"] = scaled_data.apply(lambda x: label_function(x)[4], axis=1)
 
-    # def count_consecutive_returns(scaled_data):
-    #     mask = scaled_data["avg_return_pct"] > 5
-    #     return np.where(
-    #         mask.shift(1), scaled_data.loc[mask, "consecutive_return_pct"].iloc[1:], np.where(mask.iloc[0], [1], [0])
-    #     )
-
-    # # Apply this function to your DataFrame
-    # scaled_data["consecutive_return_pct"] = 0
-    # mask = (scaled_data["avg_return_pct"] > 5) & (scaled_data["consecutive_return_pct"] == 0)
-    # scaled_data.loc[mask, "consecutive_return_pct"] = 1
-
-    # for i in range(2, len(scaled_data)):
-    #     if scaled_data.iloc[i - 1]["avg_return_pct"] <= 5:
-    #         scaled_data.at[scaled_data.iloc[i - 1].name, "consecutive_return_pct"] = 0
-    #     else:
-    #         scaled_data.loc[mask, "consecutive_return_pct"] = count_consecutive_returns(scaled_data)
-
-    scaled_data.to_csv(h.get_scaled_labeled(ticker, interval, max_bar=50), index=False)
+    scaled_data.to_csv(h.get_scaled_labeled(ticker, interval, short=short), index=False)
 
     print(f"{ticker} {interval} done!")
 

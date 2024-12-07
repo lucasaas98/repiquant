@@ -117,8 +117,9 @@ def get_trade_outcomes_file(ticker, interval, max_bar=50):
     return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, f"{max_bar}_max_bars_trade_outcomes.csv")
 
 
-def get_scaled_labeled(ticker, interval, max_bar=50):
-    return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, f"scaled_labeled_{max_bar}_bars.csv")
+def get_scaled_labeled(ticker, interval, max_bar=50, short=False):
+    file_name = f"scaled_labeled_{max_bar}_bars.csv" if not short else f"scaled_labeled_{max_bar}_bars_short.csv"
+    return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, file_name)
 
 
 def get_labeled_outcomes(ticker, interval, max_bar=50):
