@@ -21,9 +21,8 @@ def train_classifier_simple():
 
     all_data = []
 
-    # Load dataset from CSV files
     for ticker in all_tickers:
-        scaled_labeled_50_bars = pd.read_csv(h.get_scaled_labeled(ticker, interval), index_col=0)
+        scaled_labeled_50_bars = pd.read_parquet(h.get_scaled_labeled_parquet(ticker, interval), engine="fastparquet")
 
         scaled_labeled_50_bars = scaled_labeled_50_bars.drop(
             ["avg_stoploss", "avg_bars_in_market", "avg_takeprofit"], axis=1
@@ -63,9 +62,9 @@ def train_classifier():
 
     all_data = []
 
-    # Load dataset from CSV files
+    # Load dataset from Parquet files
     for ticker in all_tickers:
-        scaled_labeled_50_bars = pd.read_csv(h.get_scaled_labeled(ticker, interval), index_col=0)
+        scaled_labeled_50_bars = pd.read_parquet(h.get_scaled_labeled_parquet(ticker, interval), engine="fastparquet")
 
         scaled_labeled_50_bars = scaled_labeled_50_bars.drop(
             ["avg_stoploss", "avg_bars_in_market", "avg_takeprofit"], axis=1

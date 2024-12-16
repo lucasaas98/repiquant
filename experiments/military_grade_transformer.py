@@ -61,7 +61,7 @@ def local_min_max(pts):
 
 ticker = "TSLA"
 interval = "1min"
-df = pd.read_csv(fc.get_ticker_file(ticker, interval), index_col=0)
+df = pd.read_parquet(fc.get_ticker_file_parquet(ticker, interval), engine="fastparquet")
 
 series = df[::-1].tail(100)["close"]
 series.index = np.arange(series.shape[0])

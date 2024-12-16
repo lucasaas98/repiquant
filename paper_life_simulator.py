@@ -12,8 +12,9 @@ from sklearn.preprocessing import MinMaxScaler
 
 # Current project dependencies
 import data_api as api
+import env
 import trading_api as alpaca
-from consts import INTERVAL, MULTIPLE_FEED_EXCHANGE, MULTIPLE_FEED_TICKERS
+from consts import INTERVAL, LONG_MODEL, MULTIPLE_FEED_EXCHANGE, MULTIPLE_FEED_TICKERS, SCALER
 from data_vectorizer import create_final_vector
 from notifier import notify_trade
 
@@ -43,8 +44,8 @@ class PaperTrader:
             notify_trade(txt)
 
     def load_models(self):
-        self.model = keras.models.load_model("models/classifiers/1733351489_model_5min_more_classes.keras")
-        self.scaler = load("models/scalers/1732994464_scaler.gzip")
+        self.model = keras.models.load_model(LONG_MODEL)
+        self.scaler = load(SCALER)
 
     def convert_prediction_to_label(self, prediction):
         prediction = prediction[0]
@@ -122,9 +123,9 @@ class PaperTrader:
         self.log(json.dumps(new_dict))
 
     def run(self):
-        market_state = api.get_market_open(MULTIPLE_FEED_EXCHANGE)
-        market_open = market_state[0]["is_market_open"]
         while True:
+            market_state = api.get_market_open(MULTIPLE_FEED_EXCHANGE)
+            market_open = market_state[0]["is_market_open"]
             if market_open:
                 self.current_bar += 1
                 self.log(f"Starting bar: {self.current_bar}")
@@ -138,9 +139,5 @@ class PaperTrader:
 
 
 if __name__ == "__main__":
-    # Third party dependencies
-    from dotenv import load_dotenv
-
-    load_dotenv()
     paper_trader = PaperTrader()
     paper_trader.run()

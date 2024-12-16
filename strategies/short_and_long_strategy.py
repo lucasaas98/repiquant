@@ -4,7 +4,7 @@ import keras
 import numpy as np
 
 # Current project dependencies
-from consts import INTERVAL, TICKER
+from consts import INTERVAL, LONG_MODEL, SHORT_MODEL, TICKER
 from helper import DataTranslator
 
 
@@ -50,8 +50,8 @@ class ShortAndLongStrategy(bt.Strategy):
         print("%s, %s" % (dt.isoformat(), txt))
 
     def load_models(self):
-        self.long_model = keras.models.load_model("models/classifiers/1733351489_model_5min_more_classes.keras")
-        self.short_model = keras.models.load_model("models/classifiers/1733351489_model_5min_more_classes_short.keras")
+        self.long_model = keras.models.load_model(LONG_MODEL)
+        self.short_model = keras.models.load_model(SHORT_MODEL)
 
     def notify_order(self, order):
         if order.status in [order.Submitted, order.Accepted]:
@@ -63,16 +63,16 @@ class ShortAndLongStrategy(bt.Strategy):
         if order.status in [order.Completed]:
             if order.isbuy():
                 self.log(
-                    "%s - BUY EXECUTED, Price: %.2f, Cost: %.2f, Comm %.2f"
-                    % (self.position_ticker, order.executed.price, order.executed.value, order.executed.comm)
+                    "BUY EXECUTED, Price: %.2f, Cost: %.2f, Comm %.2f"
+                    % (order.executed.price, order.executed.value, order.executed.comm)
                 )
 
                 self.buyprice = order.executed.price
                 self.buycomm = order.executed.comm
             else:  # Sell
                 self.log(
-                    "%s - SELL EXECUTED, Price: %.2f, Cost: %.2f, Comm %.2f"
-                    % (self.position_ticker, order.executed.price, order.executed.value, order.executed.comm)
+                    "SELL EXECUTED, Price: %.2f, Cost: %.2f, Comm %.2f"
+                    % (order.executed.price, order.executed.value, order.executed.comm)
                 )
 
             self.bar_executed = len(self)
@@ -86,7 +86,7 @@ class ShortAndLongStrategy(bt.Strategy):
         if not trade.isclosed:
             return
 
-        self.log("%s - OPERATION PROFIT, GROSS %.2f, NET %.2f" % (self.position_ticker, trade.pnl, trade.pnlcomm))
+        self.log("OPERATION PROFIT, GROSS %.2f, NET %.2f" % (trade.pnl, trade.pnlcomm))
 
     def next(self):
         # Check if an order is pending ... if yes, we cannot send a 2nd one
@@ -131,17 +131,17 @@ class ShortAndLongStrategy(bt.Strategy):
                 self.take_profit_price = close * 1.02
                 self.shorting = False
             elif short_label == "very bad":
-                self.log(f"{ticker} - SELL CREATE, %.2f" % close)
+                self.log(f"{TICKER} - SELL CREATE, %.2f" % close)
                 self.order = self.sell()
                 self.stop_loss_price = close * (1 + self.stop_loss_pct / 100)
-                self.take_profit_price = close * 0.95
+                self.take_profit_price = close / 1.05
                 self.shorting = True
-            elif short_label == "bad":
-                self.log(f"{ticker} - SELL CREATE, %.2f" % close)
-                self.order = self.sell()
-                self.stop_loss_price = close * (1 + self.stop_loss_pct / 100)
-                self.take_profit_price = close * 0.98
-                self.shorting = True
+            # elif short_label == "bad":
+            #     self.log(f"{TICKER} - SELL CREATE, %.2f" % close)
+            #     self.order = self.sell()
+            #     self.stop_loss_price = close * (1 + self.stop_loss_pct / 100)
+            #     self.take_profit_price = close / 1.02
+            #     self.shorting = True
         elif self.position and not self.shorting:
             if (
                 (len(self) >= (self.bar_executed + 40))
@@ -158,3 +158,4 @@ class ShortAndLongStrategy(bt.Strategy):
             ):
                 self.log("BUY CREATE, %.2f" % close)
                 self.order = self.buy()
+                self.shorting = False

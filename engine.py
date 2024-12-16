@@ -15,19 +15,30 @@ def calculate_trade_outcome(close_prices, stop_loss_pct, take_profit_ratio, max_
     Returns:
         tuple: (win/loss, return pct, bars in market)
     """
+    short = False
+    if take_profit_ratio < 0:
+        short = True
+        take_profit_ratio = -(take_profit_ratio)
+
     # Calculate stop loss price
-    stop_loss_price = close_prices[0] * (1 - stop_loss_pct / 100)
+    stop_loss_price = (
+        close_prices[0] * (1 - stop_loss_pct / 100) if not short else close_prices[0] / (1 - stop_loss_pct / 100)
+    )
 
     # Calculate take profit price
-    take_profit_price = close_prices[0] * take_profit_ratio
+    take_profit_price = close_prices[0] * take_profit_ratio if not short else close_prices[0] / take_profit_ratio
 
     # Check if trade would result in a win or loss over the next max_number_of_bars bars
     for idx, current_close_price in enumerate(close_prices[1 : (max_number_of_bars + 1)]):
-        if current_close_price >= take_profit_price:
-            return True, ((current_close_price - close_prices[0]) / close_prices[0]) * 100, idx + 1
-        elif current_close_price <= stop_loss_price:
-            return False, ((current_close_price - close_prices[0]) / close_prices[0]) * 100, idx + 1
-
+        return_pct = ((current_close_price - close_prices[0]) / close_prices[0]) * 100
+        if current_close_price >= take_profit_price and not short:
+            return True, return_pct, idx + 1
+        elif current_close_price <= stop_loss_price and not short:
+            return False, return_pct, idx + 1
+        elif current_close_price <= take_profit_price and short:
+            return True, return_pct, idx + 1
+        elif current_close_price >= stop_loss_price and short:
+            return False, return_pct, idx + 1
     # If no win or loss condition is met over the next max_number_of_bars bars
     return None, None, max_number_of_bars
 
@@ -38,8 +49,8 @@ if __name__ == "__main__":
     # Current project dependencies
     import file_combiner as fc
 
-    data_file = fc.get_ticker_file("TSLA", "5min")
-    data = pd.read_csv(data_file, index_col=0)
+    data_file = fc.get_ticker_file_parquet("TSLA", "5min")
+    data = pd.read_parquet(data_file, engine="fastparquet")
 
     stop_loss_pct = 5.0
     take_profit_ratio = 1.2

@@ -1,0 +1,9 @@
+alpaca-py
+twelvedata
+numpy
+pandas
+joblib
+tensorflow
+keras
+python-dotenv
+scikit-learn

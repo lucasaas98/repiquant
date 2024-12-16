@@ -14,3 +14,16 @@ joblib
 tensorflow
 keras
 python-dotenv
+imbalanced-learn
+gym
+torch
+torchvision
+torchaudio
+stable-baselines3
+rl_zoo3
+gym[box2d]
+tensorboard
+tqdm
+pyarrow
+fastparquet
+rllte-core

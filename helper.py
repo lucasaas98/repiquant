@@ -18,13 +18,13 @@ class DataTranslator:
         self.increments_data = None
         self.ticker = ticker
         self.interval = interval
-        self.increments_data_file = get_scaled_previous_combined(ticker, interval)
-        self.hloc_data_file = get_ticker_file(ticker, interval)
+        self.increments_data_file = get_scaled_previous_combined_parquet(ticker, interval)
+        self.hloc_data_file = get_ticker_file_parquet(ticker, interval)
         self.load_data()
 
     def load_data(self):
-        self.hloc_data = pd.read_csv(self.hloc_data_file, index_col=0)
-        self.increments_data = pd.read_csv(self.increments_data_file, index_col=0)
+        self.hloc_data = pd.read_parquet(self.hloc_data_file, engine="fastparquet")
+        self.increments_data = pd.read_parquet(self.increments_data_file, engine="fastparquet")
 
     def get_increments_for_bar(self, timestamp):
         real_index = timestamp.strftime("%Y-%m-%d %H:%M:%S")
@@ -102,19 +102,42 @@ def get_specific_scaler(timestamp):
 
 
 def ignore_files_list():
-    return ["all_current.csv", "trade_outcomes.csv", "less_than_2_years", "fucked_in_the_api"]
+    return [
+        "all_current.csv",
+        "all_current.parquet",
+        "trade_outcomes.csv",
+        "trade_outcomes.parquet",
+        "less_than_2_years",
+        "fucked_in_the_api",
+    ]
 
 
 def get_ticker_file(ticker, interval):
     return os.path.join(RAW_DATA_FOLDER, ticker, interval, "all_current.csv")
 
 
+def get_ticker_file_parquet(ticker, interval):
+    return os.path.join(RAW_DATA_FOLDER, ticker, interval, "all_current.parquet")
+
+
 def get_ticker_files(ticker, interval):
     return [f for f in os.listdir(os.path.join(RAW_DATA_FOLDER, ticker, interval)) if f not in ignore_files_list()]
 
 
+def get_ticker_files_parquet(ticker, interval):
+    return [
+        f
+        for f in os.listdir(os.path.join(RAW_DATA_FOLDER, ticker, interval))
+        if f not in ignore_files_list() and f.split(".")[-1] == "parquet"
+    ]
+
+
 def get_trade_outcomes_file(ticker, interval, max_bar=50):
     return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, f"{max_bar}_max_bars_trade_outcomes.csv")
+
+
+def get_trade_outcomes_file_parquet(ticker, interval, max_bar=50):
+    return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, f"{max_bar}_max_bars_trade_outcomes.parquet")
 
 
 def get_scaled_labeled(ticker, interval, max_bar=50, short=False):
@@ -122,16 +145,43 @@ def get_scaled_labeled(ticker, interval, max_bar=50, short=False):
     return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, file_name)
 
 
+def get_scaled_labeled_parquet(ticker, interval, max_bar=50, short=False):
+    file_name = (
+        f"scaled_labeled_{max_bar}_bars.parquet" if not short else f"scaled_labeled_{max_bar}_bars_short.parquet"
+    )
+    return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, file_name)
+
+
+def get_scaled_labeled_both_sides(ticker, interval, max_bar=50):
+    return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, f"scaled_labeled_{max_bar}_bars_both_sides.csv")
+
+
+def get_scaled_labeled_both_sides_parquet(ticker, interval, max_bar=50):
+    return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, f"scaled_labeled_{max_bar}_bars_both_sides.parquet")
+
+
 def get_labeled_outcomes(ticker, interval, max_bar=50):
     return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, f"{max_bar}_max_bars_labeled_trade_outcomes.csv")
+
+
+def get_labeled_outcomes_parquet(ticker, interval, max_bar=50):
+    return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, f"{max_bar}_max_bars_labeled_trade_outcomes.parquet")
 
 
 def get_previous_combined(ticker, interval):
     return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, "previous_combined_by_datetime.csv")
 
 
+def get_previous_combined_parquet(ticker, interval):
+    return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, "previous_combined_by_datetime.parquet")
+
+
 def get_scaled_previous_combined(ticker, interval):
     return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, "scaled_previous_combined_by_datetime.csv")
+
+
+def get_scaled_previous_combined_parquet(ticker, interval):
+    return os.path.join(PROCESSED_DATA_FOLDER, ticker, interval, "scaled_previous_combined_by_datetime.parquet")
 
 
 def get_new_scaler():

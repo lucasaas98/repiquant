@@ -86,7 +86,9 @@ def get_all_data():
                     max_timestamp_date = datetime.datetime.fromtimestamp(max_timestamp).strftime("%Y-%m-%d %H:%M:%S")
                     print(f"\t\tMin timestamp {min_timestamp} ({min_timestamp_date})")
                     print(f"\t\tMax timestamp {max_timestamp} ({max_timestamp_date})")
-                    dataframe.to_csv(f"raw_data/{ticker}/{interval}/{min_timestamp}_{max_timestamp}.csv")
+                    dataframe.to_parquet(
+                        f"raw_data/{ticker}/{interval}/{min_timestamp}_{max_timestamp}.parquet", engine="fastparquet"
+                    )
                 except Exception as e:
                     print(e)
                     if "greater value than the number of historical data points" in str(e):
@@ -150,7 +152,10 @@ def get_older_data():
                         )
                         print(f"\t\tMin timestamp {min_timestamp_df} ({min_timestamp_date})")
                         print(f"\t\tMax timestamp {max_timestamp_df} ({max_timestamp_date})")
-                        dataframe.to_csv(f"raw_data/{ticker}/{interval}/{min_timestamp_df}_{max_timestamp_df}.csv")
+                        dataframe.to_parquet(
+                            f"raw_data/{ticker}/{interval}/{min_timestamp_df}_{max_timestamp_df}.parquet",
+                            engine="fastparquet",
+                        )
                     elif max_timestamp < (time.time() - 86400 * 10):
                         start_date = datetime.datetime.fromtimestamp(max_timestamp).strftime("%Y-%m-%d %H:%M:%S")
                         dataframe = get_bar_data(ticker=ticker, interval=interval, start_date=start_date)
@@ -163,7 +168,10 @@ def get_older_data():
                         )
                         print(f"\t\tMin timestamp {min_timestamp_df} ({min_timestamp_date})")
                         print(f"\t\tMax timestamp {max_timestamp_df} ({max_timestamp_date})")
-                        dataframe.to_csv(f"raw_data/{ticker}/{interval}/{min_timestamp_df}_{max_timestamp_df}.csv")
+                        dataframe.to_parquet(
+                            f"raw_data/{ticker}/{interval}/{min_timestamp_df}_{max_timestamp_df}.parquet",
+                            engine="fastparquet",
+                        )
                     else:
                         flag = False
                 except Exception as e:
@@ -181,8 +189,8 @@ def get_older_data():
                         exit()
                 finally:
                     if flag:
-                        print("Sleeping 5s to avoid rate limiting")
-                        time.sleep(5)
+                        print("Sleeping 6s to avoid rate limiting")
+                        time.sleep(6)
 
             print("\tWe already fetched all the data for the ticker!")
             count += 1
@@ -197,7 +205,7 @@ def take_picture():
     flag = True
     while flag:
         try:
-            flag = get_all_data()
+            flag = get_older_data()
         except Exception as e:
             print("Error: ", e)
 

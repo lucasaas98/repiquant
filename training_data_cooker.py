@@ -12,7 +12,7 @@ import helper as h
 
 
 def label_data(ticker, interval, max_number_of_bars):
-    dataframe = pd.read_csv(h.get_ticker_file(ticker, interval), index_col=0)
+    dataframe = pd.read_parquet(h.get_ticker_file_parquet(ticker, interval), engine="fastparquet")
     closes = dataframe["close"].values
     results = dict()
     results["draw"] = list()
@@ -39,25 +39,38 @@ def label_data(ticker, interval, max_number_of_bars):
 
 
 def label_data_simpler(ticker, interval, max_number_of_bars):
-    dataframe = pd.read_csv(h.get_ticker_file(ticker, interval), index_col=0)
+    dataframe = pd.read_parquet(h.get_ticker_file_parquet(ticker, interval), engine="fastparquet")
+    dataframe.set_index("datetime", inplace=True)
+    # print(dataframe.head())
     closes = dataframe["close"].values
     indexes = dataframe.index.tolist()
-
-    closes_and_indexes = [(closes[(i + 1) :], indexes[i]) for i in range(len(dataframe) - max_number_of_bars - 1)]
+    # print(indexes)
+    closes_and_indexes = [(closes[i:], indexes[i]) for i in range(len(dataframe) - max_number_of_bars - 1)]
 
     results = list()
 
     for [new_close_prices, new_index] in closes_and_indexes:
-        for stop_loss in [1, 2, 3, 4, 5, 6, 8, 10]:
-            for take_profit_ratio in [1.05, 1.1, 1.2, 1.5, 2, 3, 5]:
+        for stop_loss in [0.5, 1, 2, 3, 4, 5]:
+            for take_profit_ratio in [1.01, 1.02, 1.03, 1.04, 1.05, 1.06, 1.07, 1.08, 1.09, 1.10]:
                 (win, return_pct, bars_in_market) = engine.calculate_trade_outcome(
                     close_prices=new_close_prices,
                     stop_loss_pct=stop_loss,
                     take_profit_ratio=take_profit_ratio,
                     max_number_of_bars=max_number_of_bars,
                 )
+
                 if win is not None:
                     results.append((new_index, return_pct, bars_in_market, stop_loss, take_profit_ratio))
+
+                (win, return_pct, bars_in_market) = engine.calculate_trade_outcome(
+                    close_prices=new_close_prices,
+                    stop_loss_pct=stop_loss,
+                    take_profit_ratio=-take_profit_ratio,
+                    max_number_of_bars=max_number_of_bars,
+                )
+
+                if win is not None:
+                    results.append((new_index, return_pct, bars_in_market, stop_loss, -take_profit_ratio))
 
     return results
 
@@ -145,12 +158,12 @@ def for_loop_trade_results(results, ticker, interval):
 
 def calculate_all_trade_outcomes_to_dataframe():
     all_tickers = data_api.get_actionable_stocks_list()
-    all_intervals = h.get_intervals()
+    # all_intervals = h.get_intervals()
 
     Parallel(n_jobs=4)(
         delayed(calculate_trade_outcomes_to_dataframe)(ticker, interval)
         for ticker in all_tickers
-        for interval in all_intervals
+        for interval in ["5min"]
     )
 
 
@@ -191,6 +204,7 @@ def calculate_trade_outcomes_to_dataframe(ticker, interval):
                 indexes.append(timestamp)
 
         trade_outcomes = {
+            "datetime": indexes,
             "ticker": tickers,
             "interval": interval,
             "max_bar": max_bar_list,
@@ -201,7 +215,7 @@ def calculate_trade_outcomes_to_dataframe(ticker, interval):
         }
         df = pd.DataFrame(trade_outcomes, index=indexes)
 
-        df.to_csv(h.get_trade_outcomes_file(ticker, interval, max_bar=50))
+        df.to_parquet(h.get_trade_outcomes_file_parquet(ticker, interval, max_bar=50))
 
 
 def create_labeled_dataset():
@@ -212,7 +226,9 @@ def create_labeled_dataset():
         for interval in all_intervals:
             for max_number_of_bars in [5, 10, 20, 50, 60, 70, 100]:
                 # Create a dataframe with all the trade outcomes
-                df = pd.read_csv(h.get_trade_outcomes_file(ticker, interval, max_bar=50), index_col=0)
+                df = pd.read_parquet(
+                    h.get_trade_outcomes_file_parquet(ticker, interval, max_bar=50), engine="fastparquet"
+                )
                 df = df.reset_index(names=["datetime"])
 
                 # Compile data for each max_bar and interval combination
@@ -254,7 +270,9 @@ def create_labeled_dataset():
                         exit()
 
                     df = pd.DataFrame(labeled_data)
-                    df.to_csv(h.get_labeled_outcomes(ticker, interval, max_number_of_bars))
+                    df.to_parquet(
+                        h.get_labeled_outcomes_parquet(ticker, interval, max_number_of_bars), engine="fastparquet"
+                    )
 
 
 if __name__ == "__main__":

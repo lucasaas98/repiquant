@@ -1,3 +1,4 @@
 services:
   paper-trader:
     build: .
+    restart: unless-stopped
