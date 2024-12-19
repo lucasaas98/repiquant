@@ -3,7 +3,7 @@ import os
 from time import time
 
 # Third party dependencies
-import pandas as pd
+import polars as pl
 
 RAW_DATA_FOLDER = "raw_data"
 PROCESSED_DATA_FOLDER = "processed_data"
@@ -23,18 +23,16 @@ class DataTranslator:
         self.load_data()
 
     def load_data(self):
-        self.hloc_data = pd.read_parquet(self.hloc_data_file, engine="fastparquet")
-        self.increments_data = pd.read_parquet(self.increments_data_file, engine="fastparquet")
+        self.hloc_data = pl.scan_parquet(self.hloc_data_file)
+        self.increments_data = pl.scan_parquet(self.increments_data_file)
 
     def get_increments_for_bar(self, timestamp):
         real_index = timestamp.strftime("%Y-%m-%d %H:%M:%S")
-        if real_index in self.increments_data.index.to_list():
-            return self.increments_data.loc[real_index]
+        return self.increments_data.filter(pl.col("datetime") == real_index).collect().to_numpy()
 
     def get_close_for_bar(self, timestamp):
         real_index = timestamp.strftime("%Y-%m-%d %H:%M:%S")
-        if real_index in self.hloc_data.index.to_list():
-            return self.hloc_data.loc[real_index]
+        return self.hloc_data.filter(pl.col("datetime") == real_index).collect().to_numpy()
 
 
 def get_tickers(from_folder=False):
@@ -118,10 +116,6 @@ def get_ticker_file(ticker, interval):
 
 def get_ticker_file_parquet(ticker, interval):
     return os.path.join(RAW_DATA_FOLDER, ticker, interval, "all_current.parquet")
-
-
-def get_ticker_files(ticker, interval):
-    return [f for f in os.listdir(os.path.join(RAW_DATA_FOLDER, ticker, interval)) if f not in ignore_files_list()]
 
 
 def get_ticker_files_parquet(ticker, interval):

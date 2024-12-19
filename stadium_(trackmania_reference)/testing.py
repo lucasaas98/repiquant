@@ -5,8 +5,8 @@ from stable_baselines3 import PPO
 env = Repym(to_print=True)
 episodes = 1
 models_dir = "models"
-model_path = f"{models_dir}/1734357217/70000.zip"
-model = PPO.load(model_path, env=env)
+model_path = f"{models_dir}/1734445702/8140000.zip"
+model = PPO.load(model_path, env=env, device="cpu")
 
 for episode in range(episodes):
     done = False

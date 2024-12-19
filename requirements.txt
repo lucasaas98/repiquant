@@ -27,3 +27,4 @@ tqdm
 pyarrow
 fastparquet
 rllte-core
+polars

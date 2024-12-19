@@ -254,21 +254,12 @@ class RLeXploreWithOffPolicyRL(BaseCallback):
 # # Parallel environments
 device = "cpu"
 n_envs = 8
-# env = gym.make("BipedalWalker-v3", hardcore=True)
 env = Repym
-# env = gym.make("Blackjack-v1")
 envs = make_vec_env(env, n_envs=n_envs)
-# env = Repym()
 
 # ===================== build the reward ===================== #
 irs = RND(envs, device=device)
 # ===================== build the reward ===================== #
-
-
-# eval_callback = EvalCallback(
-#     envs, best_model_save_path=logdir, log_path=logdir, eval_freq=500, deterministic=True, render=False
-# )
-# model = PPO("MlpPolicy", env, verbose=1, tensorboard_log=logdir, device="cpu")
 
 model = PPO("MlpPolicy", envs, verbose=1, device=device, tensorboard_log=logdir)
 TIMESTEPS = 10000
